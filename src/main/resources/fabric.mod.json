@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "blazingemblem",
+	"version": "${version}",
+	"name": "Blazing Emblem",
+	"description": "First Try to make mods! Making fire emblem weapons in Minecraft",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/blazingemblem/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.scorpion.blazingemblem.BlazingEmblem"
+		],
+		"client": [
+			"net.scorpion.blazingemblem.BlazingEmblemClient"
+		],
+		"fabric-datagen": [
+			"net.scorpion.blazingemblem.BlazingEmblemDataGenerator"
+		]
+	},
+	"mixins": [
+		"blazingemblem.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
