@@ -16,6 +16,7 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.BINDING_BLADE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.FALCHION);
                         entries.add(ModItems.BINDING_BLADE);
+                        entries.add(ModItems.RAGNELL);
 
                     }).build());
 

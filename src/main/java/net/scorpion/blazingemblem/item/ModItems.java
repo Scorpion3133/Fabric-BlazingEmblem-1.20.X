@@ -13,9 +13,11 @@ import net.scorpion.blazingemblem.BlazingEmblem;
 
 public class ModItems {
     public static final Item FALCHION = registerItem("falchion",
-            new SwordItem(ModToolMaterial.BLAZING_EMBLEM, 4, -2.4f, new FabricItemSettings()));
+            new SwordItem(ModToolMaterial.BLAZING_EMBLEM, 3, -1.8f, new FabricItemSettings()));
     public static final Item BINDING_BLADE = registerItem("binding_blade",
-            new SwordItem(ModToolMaterial.BLAZING_EMBLEM, 3, -2f, new FabricItemSettings()));
+            new SwordItem(ModToolMaterial.BLAZING_EMBLEM, 4, -2f, new FabricItemSettings()));
+    public static final Item RAGNELL = registerItem("ragnell",
+            new SwordItem(ModToolMaterial.BLAZING_EMBLEM, 5, -3f, new FabricItemSettings()));
 
     private static void addItemsToCombatItemGroup(FabricItemGroupEntries entries){
 
