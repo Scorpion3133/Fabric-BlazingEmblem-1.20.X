@@ -11,9 +11,11 @@ import net.minecraft.util.Identifier;
 import net.scorpion.blazingemblem.BlazingEmblem;
 
 public class ModItems {
+    public static final Item FALCHION = registerItem("falchion", new Item(new FabricItemSettings()));
     public static final Item BINDING_BLADE = registerItem("binding_blade", new Item(new FabricItemSettings()));
 
     private static void addItemsToCombatItemGroup(FabricItemGroupEntries entries){
+        entries.add(FALCHION);
         entries.add(BINDING_BLADE);
     }
 
