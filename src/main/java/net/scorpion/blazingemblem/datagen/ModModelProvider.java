@@ -19,7 +19,5 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.BINDING_BLADE, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.FALCHION, Models.HANDHELD);
     }
 }
