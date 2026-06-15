@@ -5,18 +5,20 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.SwordItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.scorpion.blazingemblem.BlazingEmblem;
 
 public class ModItems {
-    public static final Item FALCHION = registerItem("falchion", new Item(new FabricItemSettings()));
-    public static final Item BINDING_BLADE = registerItem("binding_blade", new Item(new FabricItemSettings()));
+    public static final Item FALCHION = registerItem("falchion",
+            new SwordItem(ModToolMaterial.BLAZING_EMBLEM, 4, -2.4f, new FabricItemSettings()));
+    public static final Item BINDING_BLADE = registerItem("binding_blade",
+            new SwordItem(ModToolMaterial.BLAZING_EMBLEM, 3, -2f, new FabricItemSettings()));
 
     private static void addItemsToCombatItemGroup(FabricItemGroupEntries entries){
-        entries.add(FALCHION);
-        entries.add(BINDING_BLADE);
+
     }
 
     private static Item registerItem(String name, Item item) {

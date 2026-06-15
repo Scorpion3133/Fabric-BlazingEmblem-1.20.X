@@ -10,9 +10,9 @@ import net.minecraft.util.Identifier;
 import net.scorpion.blazingemblem.BlazingEmblem;
 
 public class ModItemGroups {
-    public static final ItemGroup FE_WEAPONS = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(BlazingEmblem.MOD_ID, "fe_weapons"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.fe_weapons"))
+    public static final ItemGroup BE_WEAPONS = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(BlazingEmblem.MOD_ID, "be_weapons"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.be_weapons"))
                     .icon(() -> new ItemStack(ModItems.BINDING_BLADE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.FALCHION);
                         entries.add(ModItems.BINDING_BLADE);
