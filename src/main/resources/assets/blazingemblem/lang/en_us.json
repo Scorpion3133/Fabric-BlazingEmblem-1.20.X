@@ -1,3 +1,6 @@
 {
-  "item.blazingemblem.binding_blade": "Binding Blade"
+  "item.blazingemblem.falchion": "Falchion",
+  "item.blazingemblem.binding_blade": "Binding Blade",
+
+  "itemgroup.fe_weapons": "Fire Emblem Weapons"
 }
