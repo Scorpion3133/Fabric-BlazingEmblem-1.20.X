@@ -21,6 +21,15 @@ public class ModItemGroups {
 
                     }).build());
 
+    public static final ItemGroup EMBLEM_RINGS = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(BlazingEmblem.MOD_ID, "emblem_rings"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.emblem_rings"))
+                    .icon(() -> new ItemStack(ModItems.RING_HERO_KING)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.RING_HERO_KING);
+                        entries.add(ModItems.RING_YOUNG_LION);
+
+                    }).build());
+
     public  static void registerItemGroups() {
         BlazingEmblem.LOGGER.info("Registering Item Groups for " + BlazingEmblem.MOD_ID);
     }

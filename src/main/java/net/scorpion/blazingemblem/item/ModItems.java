@@ -12,14 +12,19 @@ import net.minecraft.util.Identifier;
 import net.scorpion.blazingemblem.BlazingEmblem;
 
 public class ModItems {
+    // Weapons
     public static final Item FALCHION = registerItem("falchion",
             new SwordItem(ModToolMaterial.BLAZING_EMBLEM, 3, -1.5f, new FabricItemSettings()));
     public static final Item BINDING_BLADE = registerItem("binding_blade",
             new SwordItem(ModToolMaterial.BLAZING_EMBLEM, 4, -2f, new FabricItemSettings()));
     public static final Item RAGNELL = registerItem("ragnell",
-            new SwordItem(ModToolMaterial.BLAZING_EMBLEM, 5, -3f, new FabricItemSettings()));
+            new SwordItem(ModToolMaterial.BLAZING_EMBLEM, 6, -3f, new FabricItemSettings()));
     public static final Item AREADBHAR = registerItem("areadbhar",
             new SwordItem(ModToolMaterial.BLAZING_EMBLEM, 3, -2f, new FabricItemSettings()));
+
+    // Emblem Rings
+    public static final Item RING_HERO_KING = registerItem("ring_hero_king", new Item(new FabricItemSettings().maxCount(16)));
+    public static final Item RING_YOUNG_LION = registerItem("ring_young_lion", new Item(new FabricItemSettings().maxCount(16)));
 
     private static void addItemsToCombatItemGroup(FabricItemGroupEntries entries){
 

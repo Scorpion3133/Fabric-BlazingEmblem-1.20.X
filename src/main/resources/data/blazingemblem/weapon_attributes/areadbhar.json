@@ -1,5 +1,5 @@
 {
-  "parent": "bettercombat:glaive",
+  "parent": "bettercombat:halberd",
   "attributes": {
     "attack_range": 4.0
   }

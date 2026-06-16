@@ -3,6 +3,9 @@
   "item.blazingemblem.binding_blade": "Binding Blade",
   "item.blazingemblem.ragnell": "Ragnell",
   "item.blazingemblem.areadbhar": "Areadbhar",
+  "item.blazingemblem.ring_hero_king": "Ring of the Hero-King",
+  "item.blazingemblem.ring_young_lion": "Ring of the Young Lion",
 
-  "itemgroup.be_weapons": "Blazing Emblem Weapons"
+  "itemgroup.be_weapons": "Blazing Emblem Weapons",
+  "itemgroup.emblem_rings": "Emblem Rings"
 }
