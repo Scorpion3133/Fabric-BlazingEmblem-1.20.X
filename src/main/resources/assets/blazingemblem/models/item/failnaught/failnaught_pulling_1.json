@@ -1,0 +1,6 @@
+{
+  "parent": "blazingemblem:item/failnaught",
+  "textures": {
+    "layer0": "blazingemblem:item/failnaught/failnaught_pulling_1"
+  }
+}

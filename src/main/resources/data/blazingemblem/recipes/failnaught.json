@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:bone_block"
+  },
+  "base": {
+    "item": "minecraft:bow"
+  },
+  "result": {
+    "item": "blazingemblem:failnaught"
+  },
+  "template": {
+    "item": "blazingemblem:bracelet_three_houses"
+  }
+}

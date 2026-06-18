@@ -4,12 +4,12 @@
   "item.blazingemblem.ragnell": "Ragnell",
   "item.blazingemblem.areadbhar": "Areadbhar",
   "item.blazingemblem.aymr": "Aymr",
+  "item.blazingemblem.failnaught": "Failnaught",
 
   "item.blazingemblem.ring_hero_king": "Ring of the Hero-King",
   "item.blazingemblem.ring_young_lion": "Ring of the Young Lion",
   "item.blazingemblem.ring_radiant_hero": "Ring of the Radiant Hero",
   "item.blazingemblem.bracelet_three_houses": "Bracelet of the Three Houses",
-
 
   "itemgroup.be_weapons": "Blazing Emblem Weapons",
   "itemgroup.emblem_rings": "Emblem Rings",
@@ -21,5 +21,6 @@
   "tooltip.blazingemblem.ragnell.title": "Legendary Sword of the Radiant Hero",
   "tooltip.blazingemblem.ragnell.tooltip": "Does Extra Damage to Undead Enemies",
   "tooltip.blazingemblem.areadbhar.title": "Hero's Relic of the Savior King",
-  "tooltip.blazingemblem.aymr.title": "Hero's Relic of the Flame Emperor"
+  "tooltip.blazingemblem.aymr.title": "Hero's Relic of the Flame Emperor",
+  "tooltip.blazingemblem.failnaught.title": "Hero's Relic of the Master Tactician"
 }

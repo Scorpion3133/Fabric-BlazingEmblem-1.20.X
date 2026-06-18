@@ -24,6 +24,8 @@ public class ModItems {
             new AreadbharItem(ModToolMaterial.BLAZING_EMBLEM, 3, -2f, new FabricItemSettings()));
     public static final Item AYMR = registerItem("aymr",
             new AymrItem(ModToolMaterial.BLAZING_EMBLEM, 5, -2.5f, new FabricItemSettings()));
+    public static final Item FAILNAUGHT = registerItem("failnaught",
+            new FailnaughtItem(new FabricItemSettings().maxDamage(768)));
 
     // Emblem Rings
     public static final Item RING_HERO_KING = registerItem("ring_hero_king", new Item(new FabricItemSettings().maxCount(16)));

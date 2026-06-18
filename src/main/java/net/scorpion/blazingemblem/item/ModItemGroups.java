@@ -19,6 +19,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RAGNELL);
                         entries.add(ModItems.AREADBHAR);
                         entries.add(ModItems.AYMR);
+                        entries.add(ModItems.FAILNAUGHT);
 
                     }).build());
 
