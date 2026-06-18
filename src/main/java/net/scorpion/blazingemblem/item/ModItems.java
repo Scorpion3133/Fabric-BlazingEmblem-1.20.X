@@ -10,10 +10,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.scorpion.blazingemblem.BlazingEmblem;
-import net.scorpion.blazingemblem.item.custom.AreadbharItem;
-import net.scorpion.blazingemblem.item.custom.BindingBladeItem;
-import net.scorpion.blazingemblem.item.custom.FalchionItem;
-import net.scorpion.blazingemblem.item.custom.RagnellItem;
+import net.scorpion.blazingemblem.item.custom.*;
 
 public class ModItems {
     // Weapons
@@ -25,6 +22,8 @@ public class ModItems {
             new RagnellItem(ModToolMaterial.BLAZING_EMBLEM, 5, -2.5f, new FabricItemSettings()));
     public static final Item AREADBHAR = registerItem("areadbhar",
             new AreadbharItem(ModToolMaterial.BLAZING_EMBLEM, 3, -2f, new FabricItemSettings()));
+    public static final Item AYMR = registerItem("aymr",
+            new AymrItem(ModToolMaterial.BLAZING_EMBLEM, 5, -2.5f, new FabricItemSettings()));
 
     // Emblem Rings
     public static final Item RING_HERO_KING = registerItem("ring_hero_king", new Item(new FabricItemSettings().maxCount(16)));

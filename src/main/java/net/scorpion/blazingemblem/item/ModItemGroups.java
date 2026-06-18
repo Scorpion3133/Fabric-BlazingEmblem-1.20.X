@@ -18,6 +18,7 @@ public class ModItemGroups {
                         entries.add(ModItems.BINDING_BLADE);
                         entries.add(ModItems.RAGNELL);
                         entries.add(ModItems.AREADBHAR);
+                        entries.add(ModItems.AYMR);
 
                     }).build());
 

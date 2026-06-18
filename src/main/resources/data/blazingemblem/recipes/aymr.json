@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:bone_block"
+  },
+  "base": {
+    "item": "minecraft:iron_axe"
+  },
+  "result": {
+    "item": "blazingemblem:aymr"
+  },
+  "template": {
+    "item": "blazingemblem:bracelet_three_houses"
+  }
+}

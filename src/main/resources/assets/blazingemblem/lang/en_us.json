@@ -3,6 +3,7 @@
   "item.blazingemblem.binding_blade": "Binding Blade",
   "item.blazingemblem.ragnell": "Ragnell",
   "item.blazingemblem.areadbhar": "Areadbhar",
+  "item.blazingemblem.aymr": "Aymr",
 
   "item.blazingemblem.ring_hero_king": "Ring of the Hero-King",
   "item.blazingemblem.ring_young_lion": "Ring of the Young Lion",
@@ -19,5 +20,6 @@
   "tooltip.blazingemblem.binding_blade.tooltip": "Sets Fire to Enemies",
   "tooltip.blazingemblem.ragnell.title": "Legendary Sword of the Radiant Hero",
   "tooltip.blazingemblem.ragnell.tooltip": "Does Extra Damage to Undead Enemies",
-  "tooltip.blazingemblem.areadbhar.title": "Hero's Relic of the Savior King"
+  "tooltip.blazingemblem.areadbhar.title": "Hero's Relic of the Savior King",
+  "tooltip.blazingemblem.aymr.title": "Hero's Relic of the Flame Emperor"
 }
