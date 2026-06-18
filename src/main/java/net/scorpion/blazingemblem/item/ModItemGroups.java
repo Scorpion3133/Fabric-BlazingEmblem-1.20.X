@@ -13,7 +13,7 @@ public class ModItemGroups {
     public static final ItemGroup BE_WEAPONS = Registry.register(Registries.ITEM_GROUP,
             new Identifier(BlazingEmblem.MOD_ID, "be_weapons"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.be_weapons"))
-                    .icon(() -> new ItemStack(ModItems.BINDING_BLADE)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.FALCHION)).entries((displayContext, entries) -> {
                         entries.add(ModItems.FALCHION);
                         entries.add(ModItems.BINDING_BLADE);
                         entries.add(ModItems.RAGNELL);
@@ -27,6 +27,8 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.RING_HERO_KING)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RING_HERO_KING);
                         entries.add(ModItems.RING_YOUNG_LION);
+                        entries.add(ModItems.RING_RADIANT_HERO);
+                        entries.add(ModItems.BRACELET_THREE_HOUSES);
 
                     }).build());
 

@@ -10,21 +10,27 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.scorpion.blazingemblem.BlazingEmblem;
+import net.scorpion.blazingemblem.item.custom.AreadbharItem;
+import net.scorpion.blazingemblem.item.custom.BindingBladeItem;
+import net.scorpion.blazingemblem.item.custom.FalchionItem;
+import net.scorpion.blazingemblem.item.custom.RagnellItem;
 
 public class ModItems {
     // Weapons
     public static final Item FALCHION = registerItem("falchion",
-            new SwordItem(ModToolMaterial.BLAZING_EMBLEM, 3, -1.5f, new FabricItemSettings()));
+            new FalchionItem(ModToolMaterial.BLAZING_EMBLEM, 4, -2f, new FabricItemSettings()));
     public static final Item BINDING_BLADE = registerItem("binding_blade",
-            new SwordItem(ModToolMaterial.BLAZING_EMBLEM, 4, -2f, new FabricItemSettings()));
+            new BindingBladeItem(ModToolMaterial.BLAZING_EMBLEM, 4, -2f, new FabricItemSettings()));
     public static final Item RAGNELL = registerItem("ragnell",
-            new SwordItem(ModToolMaterial.BLAZING_EMBLEM, 6, -3f, new FabricItemSettings()));
+            new RagnellItem(ModToolMaterial.BLAZING_EMBLEM, 5, -2.5f, new FabricItemSettings()));
     public static final Item AREADBHAR = registerItem("areadbhar",
-            new SwordItem(ModToolMaterial.BLAZING_EMBLEM, 3, -2f, new FabricItemSettings()));
+            new AreadbharItem(ModToolMaterial.BLAZING_EMBLEM, 3, -2f, new FabricItemSettings()));
 
     // Emblem Rings
     public static final Item RING_HERO_KING = registerItem("ring_hero_king", new Item(new FabricItemSettings().maxCount(16)));
     public static final Item RING_YOUNG_LION = registerItem("ring_young_lion", new Item(new FabricItemSettings().maxCount(16)));
+    public static final Item RING_RADIANT_HERO = registerItem("ring_radiant_hero", new Item(new FabricItemSettings().maxCount(16)));
+    public static final Item BRACELET_THREE_HOUSES = registerItem("bracelet_three_houses", new Item(new FabricItemSettings().maxCount(16)));
 
     private static void addItemsToCombatItemGroup(FabricItemGroupEntries entries){
 

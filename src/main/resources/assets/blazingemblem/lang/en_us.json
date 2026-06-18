@@ -3,9 +3,21 @@
   "item.blazingemblem.binding_blade": "Binding Blade",
   "item.blazingemblem.ragnell": "Ragnell",
   "item.blazingemblem.areadbhar": "Areadbhar",
+
   "item.blazingemblem.ring_hero_king": "Ring of the Hero-King",
   "item.blazingemblem.ring_young_lion": "Ring of the Young Lion",
+  "item.blazingemblem.ring_radiant_hero": "Ring of the Radiant Hero",
+  "item.blazingemblem.bracelet_three_houses": "Bracelet of the Three Houses",
+
 
   "itemgroup.be_weapons": "Blazing Emblem Weapons",
-  "itemgroup.emblem_rings": "Emblem Rings"
+  "itemgroup.emblem_rings": "Emblem Rings",
+
+  "tooltip.blazingemblem.falchion.title": "Divine Blade of the Hero-King",
+  "tooltip.blazingemblem.falchion.tooltip": "Does Extra Damage to End Enemies",
+  "tooltip.blazingemblem.binding_blade.title": "Sealing Flame of the Young Lion",
+  "tooltip.blazingemblem.binding_blade.tooltip": "Sets Fire to Enemies",
+  "tooltip.blazingemblem.ragnell.title": "Legendary Sword of the Radiant Hero",
+  "tooltip.blazingemblem.ragnell.tooltip": "Does Extra Damage to Undead Enemies",
+  "tooltip.blazingemblem.areadbhar.title": "Hero's Relic of the Savior King"
 }
