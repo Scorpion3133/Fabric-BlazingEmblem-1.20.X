@@ -9,8 +9,10 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    BLAZING_EMBLEM(3,1600, 8.0f, 3.0f, 14,
-            () -> Ingredient.ofItems(Items.IRON_INGOT));
+    BLAZING_EMBLEM(4,1600, 8.0f, 3.0f, 14,
+            () -> Ingredient.ofItems(Items.IRON_INGOT)),
+    STEEL(2, 750, 6.5f, 2.5f, 14,
+                  () -> Ingredient.ofItems(ModItems.STEEL_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;

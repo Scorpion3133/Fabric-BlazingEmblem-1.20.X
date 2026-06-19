@@ -3,6 +3,7 @@ package net.scorpion.blazingemblem.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.AxeItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.SwordItem;
@@ -13,17 +14,29 @@ import net.scorpion.blazingemblem.BlazingEmblem;
 import net.scorpion.blazingemblem.item.custom.*;
 
 public class ModItems {
-    // Weapons
+    // Metals
+    public static final Item STEEL_INGOT = registerItem("steel_ingot", new Item(new FabricItemSettings()));
+
+    // Regular Weapons
+    public static final Item STEEL_SWORD = registerItem("steel_sword",
+            new SwordItem(ModToolMaterial.STEEL, 6, -2.4f, new FabricItemSettings()));
+    public static final Item STEEL_AXE = registerItem("steel_axe",
+            new AxeItem(ModToolMaterial.STEEL, 9, -3.1f, new FabricItemSettings()));
+    public static final Item STEEL_SPEAR = registerItem("steel_spear",
+            new SpearItem(ModToolMaterial.STEEL, 5, -2.4f, new FabricItemSettings()));
+
+
+    // Unique Weapons
     public static final Item FALCHION = registerItem("falchion",
-            new FalchionItem(ModToolMaterial.BLAZING_EMBLEM, 4, -2f, new FabricItemSettings()));
+            new FalchionItem(ModToolMaterial.BLAZING_EMBLEM, 8, -2f, new FabricItemSettings()));
     public static final Item BINDING_BLADE = registerItem("binding_blade",
-            new BindingBladeItem(ModToolMaterial.BLAZING_EMBLEM, 4, -2f, new FabricItemSettings()));
+            new BindingBladeItem(ModToolMaterial.BLAZING_EMBLEM, 8, -2f, new FabricItemSettings()));
     public static final Item RAGNELL = registerItem("ragnell",
-            new RagnellItem(ModToolMaterial.BLAZING_EMBLEM, 5, -2.5f, new FabricItemSettings()));
+            new RagnellItem(ModToolMaterial.BLAZING_EMBLEM, 9, -2.5f, new FabricItemSettings()));
     public static final Item AREADBHAR = registerItem("areadbhar",
-            new AreadbharItem(ModToolMaterial.BLAZING_EMBLEM, 3, -2f, new FabricItemSettings()));
+            new AreadbharItem(ModToolMaterial.BLAZING_EMBLEM, 7, -2f, new FabricItemSettings()));
     public static final Item AYMR = registerItem("aymr",
-            new AymrItem(ModToolMaterial.BLAZING_EMBLEM, 5, -2.5f, new FabricItemSettings()));
+            new AymrItem(ModToolMaterial.BLAZING_EMBLEM, 10, -2.5f, new FabricItemSettings()));
     public static final Item FAILNAUGHT = registerItem("failnaught",
             new FailnaughtItem(new FabricItemSettings().maxDamage(768)));
 
@@ -32,6 +45,9 @@ public class ModItems {
     public static final Item RING_YOUNG_LION = registerItem("ring_young_lion", new Item(new FabricItemSettings().maxCount(16)));
     public static final Item RING_RADIANT_HERO = registerItem("ring_radiant_hero", new Item(new FabricItemSettings().maxCount(16)));
     public static final Item BRACELET_THREE_HOUSES = registerItem("bracelet_three_houses", new Item(new FabricItemSettings().maxCount(16)));
+
+
+
 
     private static void addItemsToCombatItemGroup(FabricItemGroupEntries entries){
 

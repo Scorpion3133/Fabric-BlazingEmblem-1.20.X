@@ -1,4 +1,15 @@
 {
+  "item.minecraft.wooden_sword": "Training Sword",
+  "item.minecraft.wooden_axe": "Training Axe",
+  "item.minecraft.copper_sword": "Bronze Sword",
+  "item.minecraft.copper_axe": "Bronze Axe",
+
+  "item.blazingemblem.steel_ingot": "Steel Ingot",
+  "block.blazingemblem.steel_block": "Steel Block",
+  "item.blazingemblem.steel_sword": "Steel Sword",
+  "item.blazingemblem.steel_axe": "Steel Axe",
+  "item.blazingemblem.steel_spear": "Steel Spear",
+
   "item.blazingemblem.falchion": "Falchion",
   "item.blazingemblem.binding_blade": "Binding Blade",
   "item.blazingemblem.ragnell": "Ragnell",
@@ -13,6 +24,7 @@
 
   "itemgroup.be_weapons": "Blazing Emblem Weapons",
   "itemgroup.emblem_rings": "Emblem Rings",
+  "itemgroup.be_metals": "Blazing Emblem Metals",
 
   "tooltip.blazingemblem.falchion.title": "Divine Blade of the Hero-King",
   "tooltip.blazingemblem.falchion.tooltip": "Does Extra Damage to End Enemies",

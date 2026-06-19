@@ -2,6 +2,7 @@ package net.scorpion.blazingemblem;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.scorpion.blazingemblem.block.ModBlocks;
 import net.scorpion.blazingemblem.item.ModItemGroups;
 import net.scorpion.blazingemblem.item.ModItems;
 import org.slf4j.Logger;
@@ -15,5 +16,6 @@ public class BlazingEmblem implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
