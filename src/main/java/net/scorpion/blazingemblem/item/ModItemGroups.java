@@ -16,8 +16,19 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.be_weapons"))
                     .icon(() -> new ItemStack(ModItems.FALCHION)).entries((displayContext, entries) -> {
                         entries.add(ModItems.STEEL_SWORD);
+                        entries.add(ModItems.UMBRAL_STEEL_SWORD);
                         entries.add(ModItems.STEEL_AXE);
+                        entries.add(ModItems.UMBRAL_STEEL_AXE);
+
+                        entries.add(ModItems.WOODEN_SPEAR);
+                        entries.add(ModItems.STONE_SPEAR);
+                        entries.add(ModItems.IRON_SPEAR);
                         entries.add(ModItems.STEEL_SPEAR);
+                        entries.add(ModItems.GOLDEN_SPEAR);
+                        entries.add(ModItems.DIAMOND_SPEAR);
+                        entries.add(ModItems.NETHERITE_SPEAR);
+                        entries.add(ModItems.UMBRAL_STEEL_SPEAR);
+
                         entries.add(ModItems.FALCHION);
                         entries.add(ModItems.BINDING_BLADE);
                         entries.add(ModItems.RAGNELL);
@@ -43,7 +54,9 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.be_metals"))
                     .icon(() -> new ItemStack(ModItems.STEEL_INGOT)).entries((displayContext, entries) -> {
                         entries.add(ModItems.STEEL_INGOT);
+                        entries.add(ModItems.UMBRAL_STEEL_INGOT);
                         entries.add(ModBlocks.STEEL_BLOCK);
+                        entries.add(ModBlocks.UMBRAL_STEEL_BLOCK);
 
                     }).build());
 

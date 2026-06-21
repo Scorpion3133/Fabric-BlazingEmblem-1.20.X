@@ -4,7 +4,7 @@
     "item": "minecraft:bone_block"
   },
   "base": {
-    "item": "minecraft:trident"
+    "item": "blazingemblem:umbral_steel_spear"
   },
   "result": {
     "item": "blazingemblem:areadbhar"

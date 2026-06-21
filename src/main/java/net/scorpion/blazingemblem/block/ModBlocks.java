@@ -15,6 +15,8 @@ import net.scorpion.blazingemblem.BlazingEmblem;
 public class ModBlocks {
     public static final Block STEEL_BLOCK = registerBlock("steel_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+    public static final Block UMBRAL_STEEL_BLOCK = registerBlock("umbral_steel_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)));
 
 
     private static Block registerBlock(String name, Block block){

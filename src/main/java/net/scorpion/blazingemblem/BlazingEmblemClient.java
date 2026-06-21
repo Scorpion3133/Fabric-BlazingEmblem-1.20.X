@@ -8,16 +8,17 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.scorpion.blazingemblem.item.ModItems;
-import net.scorpion.blazingemblem.item.custom.FailnaughtItem;
+import net.scorpion.blazingemblem.item.custom.BowWeaponItem;
 
 public class BlazingEmblemClient implements ClientModInitializer {
 
     public static void registerModelPredicateProviders(Item bow) {
+        float speed = (bow instanceof BowWeaponItem mb) ? mb.getDrawSpeed() : 1.0F;
         ModelPredicateProviderRegistry.register(bow, new Identifier("pull"),
                 (stack, world, entity, seed) -> {
                     if (entity == null)
                         return 0.0F;
-                    return entity.getActiveItem() != stack ? 0.0F : (stack.getMaxUseTime() - entity.getItemUseTimeLeft()) / 20.0F;
+                    return entity.getActiveItem() != stack ? 0.0F : (stack.getMaxUseTime() - entity.getItemUseTimeLeft()) / 20.0F * speed;
                 });
 
         ModelPredicateProviderRegistry.register(bow, new Identifier("pulling"),

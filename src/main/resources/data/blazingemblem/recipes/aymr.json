@@ -4,7 +4,7 @@
     "item": "minecraft:bone_block"
   },
   "base": {
-    "item": "minecraft:iron_axe"
+    "item": "blazingemblem:umbral_steel_axe"
   },
   "result": {
     "item": "blazingemblem:aymr"

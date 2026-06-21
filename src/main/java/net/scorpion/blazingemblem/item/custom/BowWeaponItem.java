@@ -13,10 +13,16 @@ import net.minecraft.world.World;
 
 public class BowWeaponItem extends BowItem {
     private final double bonusDamage;
+    private final float drawSpeed;
 
-    public BowWeaponItem(Settings settings, double bonusDamage) {
+    public BowWeaponItem(Settings settings, double bonusDamage, float drawSpeed) {
         super(settings);
         this.bonusDamage = bonusDamage;
+        this.drawSpeed = drawSpeed;
+    }
+
+    public float getDrawSpeed() {
+        return this.drawSpeed;
     }
 
     @Override
@@ -30,7 +36,7 @@ public class BowWeaponItem extends BowItem {
         if (arrowStack.isEmpty()) arrowStack = new ItemStack(Items.ARROW);
 
         int used = this.getMaxUseTime(stack) - remainingUseTicks;
-        float pull = getPullProgress(used);
+        float pull = getPullProgress((int)(used * this.drawSpeed));
         if ((double) pull < 0.1) return;
 
         boolean freeArrow = infinite && arrowStack.isOf(Items.ARROW);

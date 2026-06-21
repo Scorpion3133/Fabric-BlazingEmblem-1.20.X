@@ -13,7 +13,7 @@ import java.util.List;
 
 public class FailnaughtItem extends BowWeaponItem {
     public FailnaughtItem(Settings settings) {
-        super(settings, 1.5);
+        super(settings, 3, 1);
     }
 
 
