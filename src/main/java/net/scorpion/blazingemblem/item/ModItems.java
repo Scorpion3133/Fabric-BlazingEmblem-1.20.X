@@ -13,6 +13,8 @@ import net.scorpion.blazingemblem.item.custom.*;
 public class ModItems {
     // Metals
     public static final Item STEEL_INGOT = registerItem("steel_ingot", new Item(new FabricItemSettings()));
+    public static final Item SILVER_INGOT = registerItem("silver_ingot", new Item(new FabricItemSettings()));
+    public static final Item RAW_SILVER = registerItem("raw_silver", new Item(new FabricItemSettings()));
     public static final Item UMBRAL_STEEL_INGOT = registerItem("umbral_steel_ingot", new Item(new FabricItemSettings()));
 
     // Regular Weapons
@@ -31,19 +33,23 @@ public class ModItems {
             new SpearItem(ToolMaterials.NETHERITE, 2, -2.4f, new FabricItemSettings()));
     //  Steel
     public static final Item STEEL_SWORD = registerItem("steel_sword",
-            new SwordItem(ModToolMaterial.STEEL, 3, -2.7f, new FabricItemSettings()));
+            new SwordItem(ModToolMaterial.STEEL, 3, -2.0f, new FabricItemSettings()));
     public static final Item STEEL_AXE = registerItem("steel_axe",
-            new AxeItem(ModToolMaterial.STEEL, 5, -3.2f, new FabricItemSettings()));
+            new AxeItem(ModToolMaterial.STEEL, 5, -2.7f, new FabricItemSettings()));
     public static final Item STEEL_SPEAR = registerItem("steel_spear",
-            new SpearItem(ModToolMaterial.STEEL, 2, -2.7f, new FabricItemSettings()));
-    //  Umbral Steel
+            new SpearItem(ModToolMaterial.STEEL, 2, -2.0f, new FabricItemSettings()));
+    // Silver
+    //public static final Item STEEL_SWORD = registerItem("steel_sword", new SwordItem(ModToolMaterial.STEEL, 3, -2.7f, new FabricItemSettings()));
+    //public static final Item STEEL_AXE = registerItem("steel_axe", new AxeItem(ModToolMaterial.STEEL, 5, -3.2f, new FabricItemSettings()));
+    //public static final Item STEEL_SPEAR = registerItem("steel_spear", new SpearItem(ModToolMaterial.STEEL, 2, -2.7f, new FabricItemSettings()));
+    // Umbral Steel
     public static final Item UMBRAL_STEEL_SWORD = registerItem("umbral_steel_sword",
             new SwordItem(ModToolMaterial.UMBRAL_STEEL, 3, -2.7f, new FabricItemSettings()));
     public static final Item UMBRAL_STEEL_AXE = registerItem("umbral_steel_axe",
             new AxeItem(ModToolMaterial.UMBRAL_STEEL, 5.5f, -3.2f, new FabricItemSettings()));
     public static final Item UMBRAL_STEEL_SPEAR = registerItem("umbral_steel_spear",
             new SpearItem(ModToolMaterial.UMBRAL_STEEL, 2, -2.7f, new FabricItemSettings()));
-
+    // Mithril
 
     // Unique Weapons
     public static final Item FALCHION = registerItem("falchion",

@@ -11,11 +11,11 @@ import java.util.function.Supplier;
 public enum ModToolMaterial implements ToolMaterial {
     BLAZING_EMBLEM(4,1600, 8.0f, 3.0f, 14,
             () -> Ingredient.ofItems(Items.IRON_INGOT)),
-    STEEL(2, 750, 6.5f, 3.0f, 14,
+    STEEL(2, 750, 6.5f, 2.0f, 14,
             () -> Ingredient.ofItems(ModItems.STEEL_INGOT)),
     UMBRAL_STEEL(4, 2200, 9f, 4.5f, 15,
             () -> Ingredient.ofItems(ModItems.UMBRAL_STEEL_INGOT));
-    // SILVER(2, 750, 6.5f, 3.0f, 14,() -> Ingredient.ofItems(ModItems.STEEL_INGOT)),
+    // SILVER(2, 850, 7.0f, 3.0f, 20, () -> Ingredient.ofItems(ModItems.SILVER_INGOT)),
 
     private final int miningLevel;
     private final int itemDurability;

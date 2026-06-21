@@ -52,10 +52,14 @@ public class ModItemGroups {
     public static final ItemGroup BE_METALS = Registry.register(Registries.ITEM_GROUP,
             new Identifier(BlazingEmblem.MOD_ID, "be_metals"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.be_metals"))
-                    .icon(() -> new ItemStack(ModItems.STEEL_INGOT)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.SILVER_INGOT)).entries((displayContext, entries) -> {
                         entries.add(ModItems.STEEL_INGOT);
-                        entries.add(ModItems.UMBRAL_STEEL_INGOT);
                         entries.add(ModBlocks.STEEL_BLOCK);
+                        entries.add(ModItems.RAW_SILVER);
+                        entries.add(ModItems.SILVER_INGOT);
+                        entries.add(ModBlocks.SILVER_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_SILVER_ORE);
+                        entries.add(ModItems.UMBRAL_STEEL_INGOT);
                         entries.add(ModBlocks.UMBRAL_STEEL_BLOCK);
 
                     }).build());

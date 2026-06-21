@@ -13,6 +13,10 @@ import net.scorpion.blazingemblem.BlazingEmblem;
 
 
 public class ModBlocks {
+    public static final Block SILVER_ORE = registerBlock("silver_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.GOLD_ORE)));
+    public static final Block DEEPSLATE_SILVER_ORE = registerBlock("deepslate_silver_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_GOLD_ORE)));
     public static final Block STEEL_BLOCK = registerBlock("steel_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
     public static final Block UMBRAL_STEEL_BLOCK = registerBlock("umbral_steel_block",

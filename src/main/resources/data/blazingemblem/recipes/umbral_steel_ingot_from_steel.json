@@ -7,9 +7,13 @@
     },
     {
       "item": "minecraft:netherite_ingot"
+    },
+    {
+      "item": "blazingemblem:silver_ingot"
     }
   ],
   "result": {
-    "item": "blazingemblem:umbral_steel_ingot"
+    "item": "blazingemblem:umbral_steel_ingot",
+    "count": 2
   }
 }
