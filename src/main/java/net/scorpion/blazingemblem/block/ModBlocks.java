@@ -19,7 +19,11 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_GOLD_ORE)));
     public static final Block STEEL_BLOCK = registerBlock("steel_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+    public static final Block SILVER_BLOCK = registerBlock("silver_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK)));
     public static final Block UMBRAL_STEEL_BLOCK = registerBlock("umbral_steel_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)));
+    public static final Block MYTHRIL_BLOCK = registerBlock("mythril_block",
             new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)));
 
 

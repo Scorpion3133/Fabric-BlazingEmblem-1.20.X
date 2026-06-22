@@ -16,6 +16,7 @@ public class ModItems {
     public static final Item SILVER_INGOT = registerItem("silver_ingot", new Item(new FabricItemSettings()));
     public static final Item RAW_SILVER = registerItem("raw_silver", new Item(new FabricItemSettings()));
     public static final Item UMBRAL_STEEL_INGOT = registerItem("umbral_steel_ingot", new Item(new FabricItemSettings()));
+    public static final Item MYTHRIL_INGOT = registerItem("mythril_ingot", new Item(new FabricItemSettings()));
 
     // Regular Weapons
     //  Old Metal's Spears
@@ -33,33 +34,43 @@ public class ModItems {
             new SpearItem(ToolMaterials.NETHERITE, 2, -2.4f, new FabricItemSettings()));
     //  Steel
     public static final Item STEEL_SWORD = registerItem("steel_sword",
-            new SwordItem(ModToolMaterial.STEEL, 3, -2.0f, new FabricItemSettings()));
+            new SwordItem(ModToolMaterial.STEEL, 3, -2.2f, new FabricItemSettings()));
     public static final Item STEEL_AXE = registerItem("steel_axe",
-            new AxeItem(ModToolMaterial.STEEL, 5, -2.7f, new FabricItemSettings()));
+            new AxeItem(ModToolMaterial.STEEL, 5, -2.9f, new FabricItemSettings()));
     public static final Item STEEL_SPEAR = registerItem("steel_spear",
-            new SpearItem(ModToolMaterial.STEEL, 2, -2.0f, new FabricItemSettings()));
+            new SpearItem(ModToolMaterial.STEEL, 2, -2.2f, new FabricItemSettings()));
     // Silver
-    //public static final Item STEEL_SWORD = registerItem("steel_sword", new SwordItem(ModToolMaterial.STEEL, 3, -2.7f, new FabricItemSettings()));
-    //public static final Item STEEL_AXE = registerItem("steel_axe", new AxeItem(ModToolMaterial.STEEL, 5, -3.2f, new FabricItemSettings()));
-    //public static final Item STEEL_SPEAR = registerItem("steel_spear", new SpearItem(ModToolMaterial.STEEL, 2, -2.7f, new FabricItemSettings()));
+    public static final Item SILVER_SWORD = registerItem("silver_sword",
+            new SwordItem(ModToolMaterial.SILVER, 3, -2.7f, new FabricItemSettings()));
+    public static final Item SILVER_AXE = registerItem("silver_axe",
+            new AxeItem(ModToolMaterial.SILVER, 6, -3.1f, new FabricItemSettings()));
+    public static final Item SILVER_SPEAR = registerItem("silver_spear",
+            new SpearItem(ModToolMaterial.SILVER, 2, -2.7f, new FabricItemSettings()));
     // Umbral Steel
     public static final Item UMBRAL_STEEL_SWORD = registerItem("umbral_steel_sword",
-            new SwordItem(ModToolMaterial.UMBRAL_STEEL, 3, -2.7f, new FabricItemSettings()));
+            new SwordItem(ModToolMaterial.UMBRAL_STEEL, 3, -2.6f, new FabricItemSettings()));
     public static final Item UMBRAL_STEEL_AXE = registerItem("umbral_steel_axe",
-            new AxeItem(ModToolMaterial.UMBRAL_STEEL, 5.5f, -3.2f, new FabricItemSettings()));
+            new AxeItem(ModToolMaterial.UMBRAL_STEEL, 6f, -3.2f, new FabricItemSettings()));
     public static final Item UMBRAL_STEEL_SPEAR = registerItem("umbral_steel_spear",
-            new SpearItem(ModToolMaterial.UMBRAL_STEEL, 2, -2.7f, new FabricItemSettings()));
+            new SpearItem(ModToolMaterial.UMBRAL_STEEL, 2, -2.6f, new FabricItemSettings()));
     // Mithril
+    public static final Item MYTHRIL_SWORD = registerItem("mythril_sword",
+            new SwordItem(ModToolMaterial.MYTHRIL, 3, -2.2f, new FabricItemSettings()));
+    public static final Item MYTHRIL_AXE = registerItem("mythril_axe",
+            new AxeItem(ModToolMaterial.MYTHRIL, 5, -2.9f, new FabricItemSettings()));
+    public static final Item MYTHRIL_SPEAR = registerItem("mythril_spear",
+            new SpearItem(ModToolMaterial.MYTHRIL, 2, -2.2f, new FabricItemSettings()));
+
 
     // Unique Weapons
     public static final Item FALCHION = registerItem("falchion",
-            new FalchionItem(ModToolMaterial.BLAZING_EMBLEM, 8, -2f, new FabricItemSettings()));
+            new FalchionItem(ModToolMaterial.MYTHRIL, 4, -2f, new FabricItemSettings()));
     public static final Item BINDING_BLADE = registerItem("binding_blade",
-            new BindingBladeItem(ModToolMaterial.BLAZING_EMBLEM, 8, -2f, new FabricItemSettings()));
+            new BindingBladeItem(ModToolMaterial.MYTHRIL, 4, -2f, new FabricItemSettings()));
     public static final Item RAGNELL = registerItem("ragnell",
-            new RagnellItem(ModToolMaterial.BLAZING_EMBLEM, 9, -2.5f, new FabricItemSettings()));
+            new RagnellItem(ModToolMaterial.MYTHRIL, 7, -2.6f, new FabricItemSettings()));
     public static final Item AREADBHAR = registerItem("areadbhar",
-            new AreadbharItem(ModToolMaterial.UMBRAL_STEEL, 4, -2.4f, new FabricItemSettings()));
+            new AreadbharItem(ModToolMaterial.UMBRAL_STEEL, 3, -2.4f, new FabricItemSettings()));
     public static final Item AYMR = registerItem("aymr",
             new AymrItem(ModToolMaterial.UMBRAL_STEEL, 10, -3f, new FabricItemSettings()));
     public static final Item FAILNAUGHT = registerItem("failnaught",

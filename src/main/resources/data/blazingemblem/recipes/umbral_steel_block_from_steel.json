@@ -7,9 +7,13 @@
     },
     {
       "item": "minecraft:netherite_block"
+    },
+    {
+      "item": "blazingemblem:silver_block"
     }
   ],
   "result": {
-    "item": "blazingemblem:umbral_steel_block"
+    "item": "blazingemblem:umbral_steel_block",
+    "count": 2
   }
 }

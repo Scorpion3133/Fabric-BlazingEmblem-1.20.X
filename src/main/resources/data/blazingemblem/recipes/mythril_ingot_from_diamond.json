@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
+    },
+    {
+      "item": "blazingemblem:silver_ingot"
+    }
+  ],
+  "result": {
+    "item": "blazingemblem:mythril_ingot",
+    "count": 2
+  }
+}

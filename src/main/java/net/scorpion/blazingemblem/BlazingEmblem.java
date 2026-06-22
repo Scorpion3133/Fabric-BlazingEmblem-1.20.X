@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.scorpion.blazingemblem.block.ModBlocks;
 import net.scorpion.blazingemblem.item.ModItemGroups;
 import net.scorpion.blazingemblem.item.ModItems;
+import net.scorpion.blazingemblem.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,5 +18,7 @@ public class BlazingEmblem implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModWorldGeneration.generateModWorldGen();
 	}
 }

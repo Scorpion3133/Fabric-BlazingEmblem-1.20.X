@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "blazingemblem:umbral_steel_block"
+    "blazingemblem:umbral_steel_block",
+    "blazingemblem:mythril_block"
   ]
 }

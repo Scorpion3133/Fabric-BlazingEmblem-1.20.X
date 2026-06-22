@@ -17,14 +17,24 @@
 
   "block.blazingemblem.silver_ore": "Silver Ore",
   "block.blazingemblem.deepslate_silver_ore": "Deepslate Silver Ore",
-  "item.blazingemblem.silver_ingot": "Silver Ingot",
   "item.blazingemblem.raw_silver": "Raw Silver",
+  "item.blazingemblem.silver_ingot": "Silver Ingot",
+  "block.blazingemblem.silver_block": "Silver Block",
+  "item.blazingemblem.silver_sword": "Silver Sword",
+  "item.blazingemblem.silver_axe": "Silver Axe",
+  "item.blazingemblem.silver_spear": "Silver Spear",
 
   "item.blazingemblem.umbral_steel_ingot": "Umbral Steel Ingot",
   "block.blazingemblem.umbral_steel_block": "Umbral Steel Block",
   "item.blazingemblem.umbral_steel_sword": "Umbral Steel Sword",
   "item.blazingemblem.umbral_steel_axe": "Umbral Steel Axe",
   "item.blazingemblem.umbral_steel_spear": "Umbral Steel Spear",
+
+  "item.blazingemblem.mythril_ingot": "Mythril Ingot",
+  "block.blazingemblem.mythril_block": "Mythril Block",
+  "item.blazingemblem.mythril_sword": "Mythril Sword",
+  "item.blazingemblem.mythril_axe": "Mythril Axe",
+  "item.blazingemblem.mythril_spear": "Mythril Spear",
 
 
   "item.blazingemblem.falchion": "Falchion",

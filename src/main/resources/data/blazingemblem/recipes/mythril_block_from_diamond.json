@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond_block"
+    },
+    {
+      "item": "minecraft:netherite_block"
+    },
+    {
+      "item": "blazingemblem:silver_block"
+    }
+  ],
+  "result": {
+    "item": "blazingemblem:mythril_block",
+    "count": 2
+  }
+}

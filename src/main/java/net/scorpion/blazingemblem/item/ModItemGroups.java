@@ -16,18 +16,25 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.be_weapons"))
                     .icon(() -> new ItemStack(ModItems.FALCHION)).entries((displayContext, entries) -> {
                         entries.add(ModItems.STEEL_SWORD);
+                        entries.add(ModItems.SILVER_SWORD);
                         entries.add(ModItems.UMBRAL_STEEL_SWORD);
+                        entries.add(ModItems.MYTHRIL_SWORD);
+
                         entries.add(ModItems.STEEL_AXE);
+                        entries.add(ModItems.SILVER_AXE);
                         entries.add(ModItems.UMBRAL_STEEL_AXE);
+                        entries.add(ModItems.MYTHRIL_AXE);
 
                         entries.add(ModItems.WOODEN_SPEAR);
                         entries.add(ModItems.STONE_SPEAR);
                         entries.add(ModItems.IRON_SPEAR);
                         entries.add(ModItems.STEEL_SPEAR);
+                        entries.add(ModItems.SILVER_SPEAR);
                         entries.add(ModItems.GOLDEN_SPEAR);
                         entries.add(ModItems.DIAMOND_SPEAR);
                         entries.add(ModItems.NETHERITE_SPEAR);
                         entries.add(ModItems.UMBRAL_STEEL_SPEAR);
+                        entries.add(ModItems.MYTHRIL_SPEAR);
 
                         entries.add(ModItems.FALCHION);
                         entries.add(ModItems.BINDING_BLADE);
@@ -57,11 +64,13 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STEEL_BLOCK);
                         entries.add(ModItems.RAW_SILVER);
                         entries.add(ModItems.SILVER_INGOT);
+                        entries.add(ModBlocks.SILVER_BLOCK);
                         entries.add(ModBlocks.SILVER_ORE);
                         entries.add(ModBlocks.DEEPSLATE_SILVER_ORE);
                         entries.add(ModItems.UMBRAL_STEEL_INGOT);
                         entries.add(ModBlocks.UMBRAL_STEEL_BLOCK);
-
+                        entries.add(ModItems.MYTHRIL_INGOT);
+                        entries.add(ModBlocks.MYTHRIL_BLOCK);
                     }).build());
 
     public  static void registerItemGroups() {
