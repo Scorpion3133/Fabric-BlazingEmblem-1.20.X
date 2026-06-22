@@ -8,12 +8,14 @@
   "item.blazingemblem.diamond_spear": "Diamond Spear",
   "item.blazingemblem.netherite_spear": "Netherite Spear",
   "item.minecraft.bow": "Training Bow",
+  "item.blazingemblem.iron_bow": "Iron Bow",
 
   "item.blazingemblem.steel_ingot": "Steel Ingot",
   "block.blazingemblem.steel_block": "Steel Block",
   "item.blazingemblem.steel_sword": "Steel Sword",
   "item.blazingemblem.steel_axe": "Steel Axe",
   "item.blazingemblem.steel_spear": "Steel Spear",
+  "item.blazingemblem.steel_bow": "Steel Bow",
 
   "block.blazingemblem.silver_ore": "Silver Ore",
   "block.blazingemblem.deepslate_silver_ore": "Deepslate Silver Ore",
@@ -23,18 +25,21 @@
   "item.blazingemblem.silver_sword": "Silver Sword",
   "item.blazingemblem.silver_axe": "Silver Axe",
   "item.blazingemblem.silver_spear": "Silver Spear",
+  "item.blazingemblem.silver_bow": "Silver Bow",
 
   "item.blazingemblem.umbral_steel_ingot": "Umbral Steel Ingot",
   "block.blazingemblem.umbral_steel_block": "Umbral Steel Block",
   "item.blazingemblem.umbral_steel_sword": "Umbral Steel Sword",
   "item.blazingemblem.umbral_steel_axe": "Umbral Steel Axe",
   "item.blazingemblem.umbral_steel_spear": "Umbral Steel Spear",
+  "item.blazingemblem.umbral_steel_bow": "Umbral Steel Bow",
 
   "item.blazingemblem.mythril_ingot": "Mythril Ingot",
   "block.blazingemblem.mythril_block": "Mythril Block",
   "item.blazingemblem.mythril_sword": "Mythril Sword",
   "item.blazingemblem.mythril_axe": "Mythril Axe",
   "item.blazingemblem.mythril_spear": "Mythril Spear",
+  "item.blazingemblem.mythril_bow": "Mythril Bow",
 
 
   "item.blazingemblem.falchion": "Falchion",

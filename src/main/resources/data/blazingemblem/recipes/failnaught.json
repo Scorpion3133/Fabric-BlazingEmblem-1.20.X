@@ -4,7 +4,7 @@
     "item": "minecraft:bone_block"
   },
   "base": {
-    "item": "minecraft:bow"
+    "item": "blazingemblem:umbral_steel_bow"
   },
   "result": {
     "item": "blazingemblem:failnaught"

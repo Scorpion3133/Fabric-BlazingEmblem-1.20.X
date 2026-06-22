@@ -36,6 +36,12 @@ public class ModItemGroups {
                         entries.add(ModItems.UMBRAL_STEEL_SPEAR);
                         entries.add(ModItems.MYTHRIL_SPEAR);
 
+                        entries.add(ModItems.IRON_BOW);
+                        entries.add(ModItems.STEEL_BOW);
+                        entries.add(ModItems.SILVER_BOW);
+                        entries.add(ModItems.UMBRAL_STEEL_BOW);
+                        entries.add(ModItems.MYTHRIL_BOW);
+
                         entries.add(ModItems.FALCHION);
                         entries.add(ModItems.BINDING_BLADE);
                         entries.add(ModItems.RAGNELL);

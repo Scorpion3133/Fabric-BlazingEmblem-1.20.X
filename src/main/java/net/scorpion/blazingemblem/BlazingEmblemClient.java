@@ -30,6 +30,11 @@ public class BlazingEmblemClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         ItemTooltipCallback.EVENT.register((stack,context,lines) -> {});
+        registerModelPredicateProviders(ModItems.IRON_BOW);
+        registerModelPredicateProviders(ModItems.STEEL_BOW);
+        registerModelPredicateProviders(ModItems.SILVER_BOW);
+        registerModelPredicateProviders(ModItems.UMBRAL_STEEL_BOW);
+        registerModelPredicateProviders(ModItems.MYTHRIL_BOW);
         registerModelPredicateProviders(ModItems.FAILNAUGHT);
 
     }

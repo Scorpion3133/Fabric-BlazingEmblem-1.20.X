@@ -1,0 +1,6 @@
+{
+  "parent": "blazingemblem:item/steel_bow",
+  "textures": {
+    "layer0": "blazingemblem:item/steel_bow/steel_bow_pulling_0"
+  }
+}

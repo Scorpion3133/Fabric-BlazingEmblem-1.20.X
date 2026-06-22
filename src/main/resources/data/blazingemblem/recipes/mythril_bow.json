@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "blazingemblem:mythril_ingot"
+    },
+    "S": {
+      "item": "blazingemblem:silver_ingot"
+    },
+    "X": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " #X",
+    "S X",
+    " #X"
+  ],
+  "result": {
+    "item": "blazingemblem:mythril_bow"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "blazingemblem:item/iron_bow",
+  "textures": {
+    "layer0": "blazingemblem:item/iron_bow/iron_bow_pulling_2"
+  }
+}

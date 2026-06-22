@@ -1,0 +1,6 @@
+{
+  "parent": "blazingemblem:item/mythril_bow",
+  "textures": {
+    "layer0": "blazingemblem:item/mythril_bow/mythril_bow_pulling_0"
+  }
+}
