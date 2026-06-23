@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:heart_of_the_sea"
+  },
+  "base": {
+    "item": "blazingemblem:mythril_sword"
+  },
+  "result": {
+    "item": "blazingemblem:yato"
+  },
+  "template": {
+    "item": "blazingemblem:ring_crux_fate"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:clock"
+  },
+  "base": {
+    "item": "blazingemblem:mythril_sword"
+  },
+  "result": {
+    "item": "blazingemblem:parallel_falchion"
+  },
+  "template": {
+    "item": "blazingemblem:ring_princess_exalt"
+  }
+}

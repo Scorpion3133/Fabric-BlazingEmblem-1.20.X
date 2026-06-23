@@ -76,9 +76,15 @@ public class ModItems {
     public static final Item FALCHION = registerItem("falchion",
             new FalchionItem(ModToolMaterial.MYTHRIL, 4, -2f, new FabricItemSettings()));
     public static final Item BINDING_BLADE = registerItem("binding_blade",
-            new BindingBladeItem(ModToolMaterial.MYTHRIL, 4, -2f, new FabricItemSettings()));
+            new BindingBladeItem(ModToolMaterial.MYTHRIL, 5, -2.3f, new FabricItemSettings()));
     public static final Item RAGNELL = registerItem("ragnell",
             new RagnellItem(ModToolMaterial.MYTHRIL, 7, -2.6f, new FabricItemSettings()));
+    public static final Item PARALLEL_FALCHION = registerItem("parallel_falchion",
+            new ParallelFalchionItem(ModToolMaterial.MYTHRIL, 4, -2f, new FabricItemSettings()));
+    public static final Item YATO = registerItem("yato",
+            new YatoItem(ModToolMaterial.MYTHRIL, 3, -2.2f, new FabricItemSettings()));
+    public static final Item SWORD_CREATOR = registerItem("sword_creator",
+            new SwordCreatorItem(ModToolMaterial.UMBRAL_STEEL, 4, -2.4f, new FabricItemSettings()));
     public static final Item AREADBHAR = registerItem("areadbhar",
             new AreadbharItem(ModToolMaterial.UMBRAL_STEEL, 3, -2.4f, new FabricItemSettings()));
     public static final Item AYMR = registerItem("aymr",
@@ -90,6 +96,9 @@ public class ModItems {
     public static final Item RING_HERO_KING = registerItem("ring_hero_king", new Item(new FabricItemSettings().maxCount(16)));
     public static final Item RING_YOUNG_LION = registerItem("ring_young_lion", new Item(new FabricItemSettings().maxCount(16)));
     public static final Item RING_RADIANT_HERO = registerItem("ring_radiant_hero", new Item(new FabricItemSettings().maxCount(16)));
+    public static final Item RING_PRINCESS_EXALT = registerItem("ring_princess_exalt", new Item(new FabricItemSettings().maxCount(16)));
+    public static final Item RING_CRUX_FATE = registerItem("ring_crux_fate", new Item(new FabricItemSettings().maxCount(16)));
+    public static final Item RING_INSTRUCTOR = registerItem("ring_instructor", new Item(new FabricItemSettings().maxCount(16)));
     public static final Item BRACELET_THREE_HOUSES = registerItem("bracelet_three_houses", new Item(new FabricItemSettings().maxCount(16)));
 
 

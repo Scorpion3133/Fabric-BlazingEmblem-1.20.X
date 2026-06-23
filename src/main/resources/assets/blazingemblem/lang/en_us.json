@@ -45,6 +45,9 @@
   "item.blazingemblem.falchion": "Falchion",
   "item.blazingemblem.binding_blade": "Binding Blade",
   "item.blazingemblem.ragnell": "Ragnell",
+  "item.blazingemblem.parallel_falchion": "Parallel Falchion",
+  "item.blazingemblem.yato": "Yato",
+  "item.blazingemblem.sword_creator": "Sword of the Creator",
   "item.blazingemblem.areadbhar": "Areadbhar",
   "item.blazingemblem.aymr": "Aymr",
   "item.blazingemblem.failnaught": "Failnaught",
@@ -52,6 +55,9 @@
   "item.blazingemblem.ring_hero_king": "Ring of the Hero-King",
   "item.blazingemblem.ring_young_lion": "Ring of the Young Lion",
   "item.blazingemblem.ring_radiant_hero": "Ring of the Radiant Hero",
+  "item.blazingemblem.ring_princess_exalt": "Ring of the Princess Exalt",
+  "item.blazingemblem.ring_crux_fate": "Ring of the Crux of Fate",
+  "item.blazingemblem.ring_instructor": "Ring of the Instructor",
   "item.blazingemblem.bracelet_three_houses": "Bracelet of the Three Houses",
 
   "itemgroup.be_weapons": "Blazing Emblem Weapons",
@@ -59,12 +65,19 @@
   "itemgroup.be_metals": "Blazing Emblem Metals",
 
   "tooltip.blazingemblem.falchion.title": "Divine Blade of the Hero-King",
-  "tooltip.blazingemblem.falchion.tooltip": "Does Extra Damage to End Enemies",
   "tooltip.blazingemblem.binding_blade.title": "Sealing Flame of the Young Lion",
-  "tooltip.blazingemblem.binding_blade.tooltip": "Sets Fire to Enemies",
   "tooltip.blazingemblem.ragnell.title": "Legendary Sword of the Radiant Hero",
-  "tooltip.blazingemblem.ragnell.tooltip": "Does Extra Damage to Undead Enemies",
+  "tooltip.blazingemblem.parallel_falchion.title": "Blade of the Exalted Princess",
+  "tooltip.blazingemblem.yato.title": "Blade of the Fateful Princess",
+  "tooltip.blazingemblem.sword_creator.title": "Hero's Relic of the Enlightened One",
   "tooltip.blazingemblem.areadbhar.title": "Hero's Relic of the Savior King",
   "tooltip.blazingemblem.aymr.title": "Hero's Relic of the Flame Emperor",
-  "tooltip.blazingemblem.failnaught.title": "Hero's Relic of the Master Tactician"
+  "tooltip.blazingemblem.failnaught.title": "Hero's Relic of the Master Tactician",
+
+  "tooltip.blazingemblem.falchion.tooltip": "Does Extra Damage to End Enemies",
+  "tooltip.blazingemblem.binding_blade.tooltip": "Sets Fire to Enemies",
+  "tooltip.blazingemblem.ragnell.tooltip": "Does Extra Damage to Undead Enemies",
+  "tooltip.blazingemblem.parallel_falchion.tooltip": "Heals on Hit",
+  "tooltip.blazingemblem.yato.tooltip": "Increased Power after Successive Hits",
+  "tooltip.blazingemblem.sword_creator.tooltip": "Has Great Range"
 }

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": {
+      "item": "minecraft:iron_nugget"
+    },
+    "r": {
+      "item": "blazingemblem:ring_crux_fate"
+    },
+    "#": {
+      "item": "minecraft:heart_of_the_sea"
+    }
+  },
+  "pattern": [
+    "grg",
+    "g#g",
+    "ggg"
+  ],
+  "result": {
+    "count": 2,
+    "item": "blazingemblem:ring_crux_fate"
+  }
+}

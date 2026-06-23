@@ -45,6 +45,9 @@ public class ModItemGroups {
                         entries.add(ModItems.FALCHION);
                         entries.add(ModItems.BINDING_BLADE);
                         entries.add(ModItems.RAGNELL);
+                        entries.add(ModItems.PARALLEL_FALCHION);
+                        entries.add(ModItems.YATO);
+                        entries.add(ModItems.SWORD_CREATOR);
                         entries.add(ModItems.AREADBHAR);
                         entries.add(ModItems.AYMR);
                         entries.add(ModItems.FAILNAUGHT);
@@ -58,6 +61,9 @@ public class ModItemGroups {
                         entries.add(ModItems.RING_HERO_KING);
                         entries.add(ModItems.RING_YOUNG_LION);
                         entries.add(ModItems.RING_RADIANT_HERO);
+                        entries.add(ModItems.RING_PRINCESS_EXALT);
+                        entries.add(ModItems.RING_CRUX_FATE);
+                        entries.add(ModItems.RING_INSTRUCTOR);
                         entries.add(ModItems.BRACELET_THREE_HOUSES);
 
                     }).build());
@@ -69,10 +75,10 @@ public class ModItemGroups {
                         entries.add(ModItems.STEEL_INGOT);
                         entries.add(ModBlocks.STEEL_BLOCK);
                         entries.add(ModItems.RAW_SILVER);
-                        entries.add(ModItems.SILVER_INGOT);
-                        entries.add(ModBlocks.SILVER_BLOCK);
                         entries.add(ModBlocks.SILVER_ORE);
                         entries.add(ModBlocks.DEEPSLATE_SILVER_ORE);
+                        entries.add(ModItems.SILVER_INGOT);
+                        entries.add(ModBlocks.SILVER_BLOCK);
                         entries.add(ModItems.UMBRAL_STEEL_INGOT);
                         entries.add(ModBlocks.UMBRAL_STEEL_BLOCK);
                         entries.add(ModItems.MYTHRIL_INGOT);

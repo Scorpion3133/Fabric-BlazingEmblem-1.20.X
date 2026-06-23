@@ -9,11 +9,20 @@
       "item": "minecraft:netherite_block"
     },
     {
+      "item": "minecraft:netherite_block"
+    },
+    {
+      "item": "minecraft:netherite_block"
+    },
+    {
+      "item": "blazingemblem:silver_block"
+    },
+    {
       "item": "blazingemblem:silver_block"
     }
   ],
   "result": {
     "item": "blazingemblem:mythril_block",
-    "count": 2
+    "count": 3
   }
 }

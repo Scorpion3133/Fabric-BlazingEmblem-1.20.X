@@ -5,16 +5,13 @@
     "#": {
       "item": "blazingemblem:umbral_steel_ingot"
     },
-    "S": {
-      "item": "blazingemblem:steel_ingot"
-    },
     "X": {
       "item": "minecraft:string"
     }
   },
   "pattern": [
     " #X",
-    "S X",
+    "# X",
     " #X"
   ],
   "result": {
