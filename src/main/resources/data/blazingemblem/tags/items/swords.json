@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:wooden_sword",
+    "minecraft:stone_sword",
+    "minecraft:iron_sword",
+    "minecraft:golden_sword",
+    "minecraft:diamond_sword",
+    "minecraft:netherite_sword",
+
+    "blazingemblem:steel_sword",
+    "blazingemblem:silver_sword",
+    "blazingemblem:umbral_steel_sword",
+    "blazingemblem:mythril_sword",
+
+    "blazingemblem:falchion",
+    "blazingemblem:binding_blade",
+    "blazingemblem:ragnell",
+    "blazingemblem:parallel_falchion",
+    "blazingemblem:yato",
+    "blazingemblem:sword_creator"
+  ]
+}

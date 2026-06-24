@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "blazingemblem:wooden_spear",
+    "blazingemblem:stone_spear",
+    "blazingemblem:iron_spear",
+    "blazingemblem:golden_spear",
+    "blazingemblem:diamond_spear",
+    "blazingemblem:netherite_spear",
+
+    "blazingemblem:steel_spear",
+    "blazingemblem:silver_spear",
+    "blazingemblem:umbral_steel_spear",
+    "blazingemblem:mythril_spear",
+
+    "blazingemblem:areadbhar"
+  ]
+}

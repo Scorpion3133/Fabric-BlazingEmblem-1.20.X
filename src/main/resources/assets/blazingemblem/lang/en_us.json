@@ -63,6 +63,7 @@
   "itemgroup.be_weapons": "Blazing Emblem Weapons",
   "itemgroup.emblem_rings": "Emblem Rings",
   "itemgroup.be_metals": "Blazing Emblem Metals",
+  "itemgroup.be_armors": "Blazing Emblem Armors",
 
   "tooltip.blazingemblem.falchion.title": "Divine Blade of the Hero-King",
   "tooltip.blazingemblem.binding_blade.title": "Sealing Flame of the Young Lion",
@@ -79,5 +80,9 @@
   "tooltip.blazingemblem.ragnell.tooltip": "Does Extra Damage to Undead Enemies",
   "tooltip.blazingemblem.parallel_falchion.tooltip": "Heals on Hit",
   "tooltip.blazingemblem.yato.tooltip": "Increased Power after Successive Hits",
-  "tooltip.blazingemblem.sword_creator.tooltip": "Has Great Range"
+  "tooltip.blazingemblem.sword_creator.tooltip": "Has Great Range",
+
+  "item.blazingemblem.academy_chestplate": "Academy Jacket",
+  "item.blazingemblem.academy_leggings": "Academy Pants",
+  "item.blazingemblem.academy_boots": "Academy Shoes"
 }

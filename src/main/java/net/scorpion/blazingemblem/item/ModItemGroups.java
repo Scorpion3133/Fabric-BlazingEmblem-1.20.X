@@ -85,6 +85,16 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MYTHRIL_BLOCK);
                     }).build());
 
+    public static final ItemGroup BE_ARMORs = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(BlazingEmblem.MOD_ID, "be_armors"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.be_armors"))
+                    .icon(() -> new ItemStack(ModItems.ACADEMY_CHESTPLATE)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.ACADEMY_CHESTPLATE);
+                        entries.add(ModItems.ACADEMY_LEGGINGS);
+                        entries.add(ModItems.ACADEMY_BOOTS);
+
+                    }).build());
+
     public  static void registerItemGroups() {
         BlazingEmblem.LOGGER.info("Registering Item Groups for " + BlazingEmblem.MOD_ID);
     }

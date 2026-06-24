@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:bow",
+    "minecraft:crossbow",
+    "blazingemblem:iron_bow",
+
+    "blazingemblem:steel_bow",
+    "blazingemblem:silver_bow",
+    "blazingemblem:umbral_steel_bow",
+    "blazingemblem:mythril_bow",
+
+    "blazingemblem:failnaught"
+  ]
+}

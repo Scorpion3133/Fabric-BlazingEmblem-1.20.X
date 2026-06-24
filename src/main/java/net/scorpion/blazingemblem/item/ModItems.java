@@ -101,6 +101,14 @@ public class ModItems {
     public static final Item RING_INSTRUCTOR = registerItem("ring_instructor", new Item(new FabricItemSettings().maxCount(16)));
     public static final Item BRACELET_THREE_HOUSES = registerItem("bracelet_three_houses", new Item(new FabricItemSettings().maxCount(16)));
 
+    //Armors
+    public static final Item ACADEMY_CHESTPLATE = registerItem("academy_chestplate",
+            new ArmorItem(ModArmorMaterial.ACADEMY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item ACADEMY_LEGGINGS = registerItem("academy_leggings",
+            new ArmorItem(ModArmorMaterial.ACADEMY, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item ACADEMY_BOOTS = registerItem("academy_boots",
+            new ModArmorItem(ModArmorMaterial.ACADEMY, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
 
 
 
