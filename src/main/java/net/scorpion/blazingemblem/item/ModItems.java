@@ -103,11 +103,11 @@ public class ModItems {
 
     //Armors
     public static final Item ACADEMY_CHESTPLATE = registerItem("academy_chestplate",
-            new ArmorItem(ModArmorMaterial.ACADEMY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+            new AcademyArmorItem(ModArmorMaterial.ACADEMY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item ACADEMY_LEGGINGS = registerItem("academy_leggings",
-            new ArmorItem(ModArmorMaterial.ACADEMY, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+            new AcademyArmorItem(ModArmorMaterial.ACADEMY, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item ACADEMY_BOOTS = registerItem("academy_boots",
-            new ModArmorItem(ModArmorMaterial.ACADEMY, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+            new AcademyArmorItem(ModArmorMaterial.ACADEMY, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
 
 
