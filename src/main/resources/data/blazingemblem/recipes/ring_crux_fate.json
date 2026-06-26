@@ -20,5 +20,6 @@
   "result": {
     "count": 2,
     "item": "blazingemblem:ring_crux_fate"
-  }
+  },
+  "show_notification": true
 }

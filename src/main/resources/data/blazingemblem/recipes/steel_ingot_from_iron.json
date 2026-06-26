@@ -11,5 +11,6 @@
   ],
   "result": {
     "item": "blazingemblem:steel_ingot"
-  }
+  },
+  "show_notification": true
 }

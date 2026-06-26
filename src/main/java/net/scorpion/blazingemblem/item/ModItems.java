@@ -8,6 +8,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.scorpion.blazingemblem.BlazingEmblem;
+import net.scorpion.blazingemblem.item.client.ModGeoArmorRenderer;
 import net.scorpion.blazingemblem.item.custom.*;
 
 public class ModItems {
@@ -102,12 +103,32 @@ public class ModItems {
     public static final Item BRACELET_THREE_HOUSES = registerItem("bracelet_three_houses", new Item(new FabricItemSettings().maxCount(16)));
 
     //Armors
+    // 3 Houses Academy
     public static final Item ACADEMY_CHESTPLATE = registerItem("academy_chestplate",
-            new AcademyArmorItem(ModArmorMaterial.ACADEMY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+            new ModGeoArmorItem(ModArmorMaterial.ACADEMY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("academy_armor", "academy_armor")));
     public static final Item ACADEMY_LEGGINGS = registerItem("academy_leggings",
-            new AcademyArmorItem(ModArmorMaterial.ACADEMY, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+            new ModGeoArmorItem(ModArmorMaterial.ACADEMY, ArmorItem.Type.LEGGINGS, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("academy_armor", "academy_armor")));
     public static final Item ACADEMY_BOOTS = registerItem("academy_boots",
-            new AcademyArmorItem(ModArmorMaterial.ACADEMY, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+            new ModGeoArmorItem(ModArmorMaterial.ACADEMY, ArmorItem.Type.BOOTS, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("academy_armor", "academy_armor")));
+    public static final Item BLUE_LIONS_CHESTPLATE = registerItem("blue_lions_chestplate",
+            new ModGeoArmorItem(ModArmorMaterial.ACADEMY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("house_leaders", "blue_lion")));
+    public static final Item BLACK_EAGLES_CHESTPLATE = registerItem("black_eagles_chestplate",
+            new ModGeoArmorItem(ModArmorMaterial.ACADEMY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("house_leaders", "black_eagles")));
+    public static final Item GOLDEN_DEER_CHESTPLATE = registerItem("golden_deer_chestplate",
+            new ModGeoArmorItem(ModArmorMaterial.ACADEMY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("house_leaders", "golden_deer")));
+    public static final Item ASHEN_WOLVES_CHESTPLATE = registerItem("ashen_wolves_chestplate",
+            new ModGeoArmorItem(ModArmorMaterial.ACADEMY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("house_leaders", "ashen_wolves")));
+    public static final Item VIOLET_SCORPIONS_CHESTPLATE = registerItem("violet_scorpions_chestplate",
+            new ModGeoArmorItem(ModArmorMaterial.ACADEMY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("house_leaders", "violet_scorpions")));
+
 
 
 

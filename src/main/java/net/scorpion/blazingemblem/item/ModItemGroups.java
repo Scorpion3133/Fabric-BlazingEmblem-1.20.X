@@ -92,6 +92,12 @@ public class ModItemGroups {
                         entries.add(ModItems.ACADEMY_CHESTPLATE);
                         entries.add(ModItems.ACADEMY_LEGGINGS);
                         entries.add(ModItems.ACADEMY_BOOTS);
+                        entries.add(ModItems.BLUE_LIONS_CHESTPLATE);
+                        entries.add(ModItems.BLACK_EAGLES_CHESTPLATE);
+                        entries.add(ModItems.GOLDEN_DEER_CHESTPLATE);
+                        entries.add(ModItems.ASHEN_WOLVES_CHESTPLATE);
+                        entries.add(ModItems.VIOLET_SCORPIONS_CHESTPLATE);
+
 
                     }).build());
 

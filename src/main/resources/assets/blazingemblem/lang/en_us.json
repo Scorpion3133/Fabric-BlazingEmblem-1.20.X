@@ -84,5 +84,10 @@
 
   "item.blazingemblem.academy_chestplate": "Academy Jacket",
   "item.blazingemblem.academy_leggings": "Academy Pants",
-  "item.blazingemblem.academy_boots": "Academy Shoes"
+  "item.blazingemblem.academy_boots": "Academy Shoes",
+  "item.blazingemblem.blue_lions_chestplate": "Blue Lions Jacket",
+  "item.blazingemblem.black_eagles_chestplate": "Black Eagles Jacket",
+  "item.blazingemblem.golden_deer_chestplate": "Golden Deer Jacket",
+  "item.blazingemblem.ashen_wolves_chestplate": "Ashen Wolves Jacket",
+  "item.blazingemblem.violet_scorpions_chestplate": "Violet Scorpions Jacket"
 }
