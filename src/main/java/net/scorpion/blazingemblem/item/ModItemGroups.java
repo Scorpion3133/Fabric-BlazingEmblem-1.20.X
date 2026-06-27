@@ -97,6 +97,10 @@ public class ModItemGroups {
                         entries.add(ModItems.GOLDEN_DEER_CHESTPLATE);
                         entries.add(ModItems.ASHEN_WOLVES_CHESTPLATE);
                         entries.add(ModItems.VIOLET_SCORPIONS_CHESTPLATE);
+                        entries.add(ModItems.MYRMIDON_HEADBAND);
+                        entries.add(ModItems.MYRMIDON_CHESTPLATE);
+                        entries.add(ModItems.MYRMIDON_LEGGINGS);
+                        entries.add(ModItems.MYRMIDON_BOOTS);
 
 
                     }).build());

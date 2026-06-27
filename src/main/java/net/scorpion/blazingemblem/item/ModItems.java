@@ -128,6 +128,19 @@ public class ModItems {
     public static final Item VIOLET_SCORPIONS_CHESTPLATE = registerItem("violet_scorpions_chestplate",
             new ModGeoArmorItem(ModArmorMaterial.ACADEMY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings(),
                     () -> new ModGeoArmorRenderer("house_leaders", "violet_scorpions")));
+    // Beginner Classes
+    public static final Item MYRMIDON_HEADBAND = registerItem("myrmidon_headband",
+            new ModGeoArmorItem(ModArmorMaterial.MYRMIDON, ArmorItem.Type.HELMET, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("myrmidon", "myrmidon")));
+    public static final Item MYRMIDON_CHESTPLATE = registerItem("myrmidon_chestplate",
+            new ModGeoArmorItem(ModArmorMaterial.MYRMIDON, ArmorItem.Type.CHESTPLATE, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("myrmidon", "myrmidon")));
+    public static final Item MYRMIDON_LEGGINGS = registerItem("myrmidon_leggings",
+            new ModGeoArmorItem(ModArmorMaterial.MYRMIDON, ArmorItem.Type.LEGGINGS, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("myrmidon", "myrmidon")));
+    public static final Item MYRMIDON_BOOTS = registerItem("myrmidon_boots",
+            new ModGeoArmorItem(ModArmorMaterial.MYRMIDON, ArmorItem.Type.BOOTS, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("myrmidon", "myrmidon")));
 
 
 

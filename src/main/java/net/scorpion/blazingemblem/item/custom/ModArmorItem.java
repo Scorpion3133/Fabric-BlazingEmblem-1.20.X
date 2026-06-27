@@ -12,6 +12,7 @@ import net.minecraft.world.World;
 import net.scorpion.blazingemblem.item.ModArmorMaterial;
 
 import java.util.Map;
+import java.util.Set;
 
 public class ModArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
@@ -26,7 +27,7 @@ public class ModArmorItem extends ArmorItem {
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if(!world.isClient()) {
-            if(entity instanceof PlayerEntity player && hasFullSuitOfArmorOn(player)) {
+            if(entity instanceof PlayerEntity player) {
                 evaluateArmorEffects(player);
             }
         }
@@ -54,27 +55,28 @@ public class ModArmorItem extends ArmorItem {
         }
     }
 
-    private boolean hasFullSuitOfArmorOn(PlayerEntity player) {
+    private static final Set<ArmorMaterial> THREE_PIECE = Set.of(ModArmorMaterial.ACADEMY);
+
+    public static boolean hasCorrectArmorOn(ArmorMaterial material, PlayerEntity player) {
+        boolean requiresHelmet = !THREE_PIECE.contains(material);
+
         ItemStack boots = player.getInventory().getArmorStack(0);
         ItemStack leggings = player.getInventory().getArmorStack(1);
         ItemStack chestplate = player.getInventory().getArmorStack(2);
+        ItemStack helmet = player.getInventory().getArmorStack(3);
 
-        return !chestplate.isEmpty() && !leggings.isEmpty() && !boots.isEmpty();
-    }
-
-    private boolean hasCorrectArmorOn(ArmorMaterial material, PlayerEntity player) {
-        ItemStack boots = player.getInventory().getArmorStack(0);
-        ItemStack leggings = player.getInventory().getArmorStack(1);
-        ItemStack chestplate = player.getInventory().getArmorStack(2);
-
-        if (!(boots.getItem() instanceof ArmorItem b)
-                || !(leggings.getItem() instanceof ArmorItem l)
-                || !(chestplate.getItem() instanceof ArmorItem c)) {
+        // core 3 must always match
+        if (!matches(boots, material) || !matches(leggings, material) || !matches(chestplate, material)) {
             return false;
         }
+        // helmet only required for 4-piece sets
+        if (requiresHelmet && !matches(helmet, material)) {
+            return false;
+        }
+        return true;
+    }
 
-        return b.getMaterial() == material
-                && l.getMaterial() == material
-                && c.getMaterial() == material;
+    private static boolean matches(ItemStack stack, ArmorMaterial material) {
+        return stack.getItem() instanceof ArmorItem armor && armor.getMaterial() == material;
     }
 }
