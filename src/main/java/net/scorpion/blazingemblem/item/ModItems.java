@@ -129,6 +129,7 @@ public class ModItems {
             new ModGeoArmorItem(ModArmorMaterial.ACADEMY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings(),
                     () -> new ModGeoArmorRenderer("house_leaders", "violet_scorpions")));
     // Beginner Classes
+    //  Myrmidon
     public static final Item MYRMIDON_HEADBAND = registerItem("myrmidon_headband",
             new ModGeoArmorItem(ModArmorMaterial.MYRMIDON, ArmorItem.Type.HELMET, new FabricItemSettings(),
                     () -> new ModGeoArmorRenderer("myrmidon", "myrmidon")));
@@ -141,6 +142,32 @@ public class ModItems {
     public static final Item MYRMIDON_BOOTS = registerItem("myrmidon_boots",
             new ModGeoArmorItem(ModArmorMaterial.MYRMIDON, ArmorItem.Type.BOOTS, new FabricItemSettings(),
                     () -> new ModGeoArmorRenderer("myrmidon", "myrmidon")));
+    //  Soldier
+    public static final Item SOLDIER_HELMET = registerItem("soldier_helmet",
+            new ModGeoArmorItem(ModArmorMaterial.SOLDIER, ArmorItem.Type.HELMET, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("soldier", "soldier")));
+    public static final Item SOLDIER_CHESTPLATE = registerItem("soldier_chestplate",
+            new ModGeoArmorItem(ModArmorMaterial.SOLDIER, ArmorItem.Type.CHESTPLATE, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("soldier", "soldier")));
+    public static final Item SOLDIER_LEGGINGS = registerItem("soldier_leggings",
+            new ModGeoArmorItem(ModArmorMaterial.SOLDIER, ArmorItem.Type.LEGGINGS, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("soldier", "soldier")));
+    public static final Item SOLDIER_BOOTS = registerItem("soldier_boots",
+            new ModGeoArmorItem(ModArmorMaterial.SOLDIER, ArmorItem.Type.BOOTS, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("soldier", "soldier")));
+    //  Fighter
+    public static final Item FIGHTER_HELMET = registerItem("fighter_helmet",
+            new ModGeoArmorItem(ModArmorMaterial.FIGHTER, ArmorItem.Type.HELMET, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("fighter", "fighter")));
+    public static final Item FIGHTER_CHESTPLATE = registerItem("fighter_chestplate",
+            new ModGeoArmorItem(ModArmorMaterial.FIGHTER, ArmorItem.Type.CHESTPLATE, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("fighter", "fighter")));
+    public static final Item FIGHTER_LEGGINGS = registerItem("fighter_leggings",
+            new ModGeoArmorItem(ModArmorMaterial.FIGHTER, ArmorItem.Type.LEGGINGS, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("fighter", "fighter")));
+    public static final Item FIGHTER_BOOTS = registerItem("fighter_boots",
+            new ModGeoArmorItem(ModArmorMaterial.FIGHTER, ArmorItem.Type.BOOTS, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("fighter", "fighter")));
 
 
 

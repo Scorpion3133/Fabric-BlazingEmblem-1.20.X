@@ -89,6 +89,7 @@ public class ModItemGroups {
             new Identifier(BlazingEmblem.MOD_ID, "be_armors"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.be_armors"))
                     .icon(() -> new ItemStack(ModItems.ACADEMY_CHESTPLATE)).entries((displayContext, entries) -> {
+                        // Academy
                         entries.add(ModItems.ACADEMY_CHESTPLATE);
                         entries.add(ModItems.ACADEMY_LEGGINGS);
                         entries.add(ModItems.ACADEMY_BOOTS);
@@ -97,10 +98,20 @@ public class ModItemGroups {
                         entries.add(ModItems.GOLDEN_DEER_CHESTPLATE);
                         entries.add(ModItems.ASHEN_WOLVES_CHESTPLATE);
                         entries.add(ModItems.VIOLET_SCORPIONS_CHESTPLATE);
+                        // Beginner Armors
                         entries.add(ModItems.MYRMIDON_HEADBAND);
                         entries.add(ModItems.MYRMIDON_CHESTPLATE);
                         entries.add(ModItems.MYRMIDON_LEGGINGS);
                         entries.add(ModItems.MYRMIDON_BOOTS);
+                        entries.add(ModItems.SOLDIER_HELMET);
+                        entries.add(ModItems.SOLDIER_CHESTPLATE);
+                        entries.add(ModItems.SOLDIER_LEGGINGS);
+                        entries.add(ModItems.SOLDIER_BOOTS);
+                        entries.add(ModItems.FIGHTER_HELMET);
+                        entries.add(ModItems.FIGHTER_CHESTPLATE);
+                        entries.add(ModItems.FIGHTER_LEGGINGS);
+                        entries.add(ModItems.FIGHTER_BOOTS);
+
 
 
                     }).build());

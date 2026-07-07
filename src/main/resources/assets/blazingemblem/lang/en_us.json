@@ -94,5 +94,15 @@
   "item.blazingemblem.myrmidon_headband": "Myrmidon Headband",
   "item.blazingemblem.myrmidon_chestplate": "Myrmidon Chestplate",
   "item.blazingemblem.myrmidon_leggings": "Myrmidon Leggings",
-  "item.blazingemblem.myrmidon_boots": "Myrmidon Boots"
+  "item.blazingemblem.myrmidon_boots": "Myrmidon Boots",
+
+  "item.blazingemblem.soldier_helmet": "Soldier Helmet",
+  "item.blazingemblem.soldier_chestplate": "Soldier Chestplate",
+  "item.blazingemblem.soldier_leggings": "Soldier Leggings",
+  "item.blazingemblem.soldier_boots": "Soldier Boots",
+
+  "item.blazingemblem.fighter_helmet": "Fighter Helmet",
+  "item.blazingemblem.fighter_chestplate": "Fighter Chestplate",
+  "item.blazingemblem.fighter_leggings": "Fighter Leggings",
+  "item.blazingemblem.fighter_boots": "Fighter Boots"
 }
