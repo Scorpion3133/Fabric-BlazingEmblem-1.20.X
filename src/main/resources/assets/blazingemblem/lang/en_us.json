@@ -104,5 +104,10 @@
   "item.blazingemblem.fighter_helmet": "Fighter Helmet",
   "item.blazingemblem.fighter_chestplate": "Fighter Chestplate",
   "item.blazingemblem.fighter_leggings": "Fighter Leggings",
-  "item.blazingemblem.fighter_boots": "Fighter Boots"
+  "item.blazingemblem.fighter_boots": "Fighter Boots",
+
+  "item.blazingemblem.monk_cap": "Monk Cap",
+  "item.blazingemblem.monk_dress": "Monk Dress",
+  "item.blazingemblem.monk_pants": "Monk Pants",
+  "item.blazingemblem.monk_boots": "Monk Boots"
 }

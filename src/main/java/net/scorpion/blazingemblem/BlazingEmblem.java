@@ -52,21 +52,23 @@ public class BlazingEmblem implements ModInitializer {
 					target.timeUntilRegen = 0;
 					target.damage(world.getDamageSources().mobAttack(player), 2.0f);
 					target.timeUntilRegen = oldRegen;
-				} else if (weapon.isIn(ModTags.Items.SPEARS)
+				}
+				if (weapon.isIn(ModTags.Items.SPEARS)
 						&& ModArmorItem.hasCorrectArmorOn(ModArmorMaterial.SOLDIER, player)) {
 					int oldRegen = target.timeUntilRegen;
 					target.timeUntilRegen = 0;
 					target.damage(world.getDamageSources().mobAttack(player), 2.0f);
 					target.timeUntilRegen = oldRegen;
-				} else if (weapon.isIn(ModTags.Items.AXES)
+				}
+				if (weapon.isIn(ModTags.Items.AXES)
 						&& ModArmorItem.hasCorrectArmorOn(ModArmorMaterial.FIGHTER, player)) {
 					int oldRegen = target.timeUntilRegen;
 					target.timeUntilRegen = 0;
 					target.damage(world.getDamageSources().mobAttack(player), 2.0f);
 					target.timeUntilRegen = oldRegen;
 				}
+				// Add Monk when magic is in
 
-				// (future: Soldier+lance, Fighter+axe, Hunter+bow... each one more if-block here)
 			}
 
 			return ActionResult.PASS;
