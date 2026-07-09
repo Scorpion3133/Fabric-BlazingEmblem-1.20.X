@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:white_wool"
+    },
+    "G": {
+      "item": "minecraft:green_wool"
+    },
+    "X": {
+      "item": "minecraft:leather"
+    }
+  },
+  "pattern": [
+    "GXG",
+    "# #",
+    "# #"
+  ],
+  "result": {
+    "item": "blazingemblem:hunter_pants"
+  }
+}

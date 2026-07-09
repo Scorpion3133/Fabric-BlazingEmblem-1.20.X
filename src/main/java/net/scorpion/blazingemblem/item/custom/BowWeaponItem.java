@@ -10,6 +10,7 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
 import net.minecraft.world.World;
+import net.scorpion.blazingemblem.item.ModArmorMaterial;
 
 public class BowWeaponItem extends BowItem {
     private final double bonusDamage;
@@ -46,7 +47,12 @@ public class BowWeaponItem extends BowItem {
             arrow.setVelocity(player, player.getPitch(), player.getYaw(), 0.0F, pull * 3.0F, 1.0F);
             if (pull == 1.0F) arrow.setCritical(true);
 
-            arrow.setDamage(arrow.getDamage() + this.bonusDamage); // <-- your bonus
+            arrow.setDamage(arrow.getDamage() + this.bonusDamage); // Weapon bonus
+            // Armor set bonus
+            if (player.getWorld().getServer() != null
+                    && ModArmorItem.hasCorrectArmorOn(ModArmorMaterial.HUNTER, player)) {
+                arrow.setDamage(arrow.getDamage() + 1.0);
+            }
 
             int power = EnchantmentHelper.getLevel(Enchantments.POWER, stack);
             if (power > 0) arrow.setDamage(arrow.getDamage() + (double) power * 0.5 + 0.5);

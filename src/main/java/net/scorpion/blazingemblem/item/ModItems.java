@@ -168,11 +168,24 @@ public class ModItems {
     public static final Item FIGHTER_BOOTS = registerItem("fighter_boots",
             new ModGeoArmorItem(ModArmorMaterial.FIGHTER, ArmorItem.Type.BOOTS, new FabricItemSettings(),
                     () -> new ModGeoArmorRenderer("fighter", "fighter")));
+    //  Hunter
+    public static final Item HUNTER_BANDANA = registerItem("hunter_bandana",
+            new ModGeoArmorItem(ModArmorMaterial.HUNTER, ArmorItem.Type.HELMET, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("hunter", "hunter")));
+    public static final Item HUNTER_JACKET = registerItem("hunter_jacket",
+            new ModGeoArmorItem(ModArmorMaterial.HUNTER, ArmorItem.Type.CHESTPLATE, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("hunter", "hunter")));
+    public static final Item HUNTER_PANTS = registerItem("hunter_pants",
+            new ModGeoArmorItem(ModArmorMaterial.HUNTER, ArmorItem.Type.LEGGINGS, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("hunter", "hunter")));
+    public static final Item HUNTER_BOOTS = registerItem("hunter_boots",
+            new ModGeoArmorItem(ModArmorMaterial.HUNTER, ArmorItem.Type.BOOTS, new FabricItemSettings(),
+                    () -> new ModGeoArmorRenderer("hunter", "hunter")));
     //  Monk
     public static final Item MONK_CAP = registerItem("monk_cap",
             new ModGeoArmorItem(ModArmorMaterial.MONK, ArmorItem.Type.HELMET, new FabricItemSettings(),
                     () -> new ModGeoArmorRenderer("monk", "monk")));
-    public static final Item MONK_DRESS = registerItem("monk_dress",
+    public static final Item MONK_ROBE = registerItem("monk_robe",
             new ModGeoArmorItem(ModArmorMaterial.MONK, ArmorItem.Type.CHESTPLATE, new FabricItemSettings(),
                     () -> new ModGeoArmorRenderer("monk", "monk")));
     public static final Item MONK_PANTS = registerItem("monk_pants",

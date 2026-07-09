@@ -106,8 +106,13 @@
   "item.blazingemblem.fighter_leggings": "Fighter Leggings",
   "item.blazingemblem.fighter_boots": "Fighter Boots",
 
+  "item.blazingemblem.hunter_bandana": "Hunter Bandana",
+  "item.blazingemblem.hunter_jacket": "Hunter Jacket",
+  "item.blazingemblem.hunter_pants": "Hunter Pants",
+  "item.blazingemblem.hunter_boots": "Hunter Boots",
+
   "item.blazingemblem.monk_cap": "Monk Cap",
-  "item.blazingemblem.monk_dress": "Monk Dress",
+  "item.blazingemblem.monk_robe": "Monk Robe",
   "item.blazingemblem.monk_pants": "Monk Pants",
   "item.blazingemblem.monk_boots": "Monk Boots"
 }

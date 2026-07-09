@@ -11,16 +11,18 @@ import net.scorpion.blazingemblem.BlazingEmblem;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements ArmorMaterial {
-    ACADEMY("academy", 7, new int[] { 0, 3, 2, 1 }, 15,
+    ACADEMY("academy", 5, new int[] { 0, 3, 2, 1 }, 15,
             SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0f, 0.0f, () -> Ingredient.ofItems(Items.BLACK_WOOL)),
-    MYRMIDON("myrmidon", 12, new int[] { 1, 4, 3, 2 }, 12,
-    SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0f, 0.0f, () -> Ingredient.ofItems(Items.LEATHER)),
-    SOLDIER("soldier", 15, new int[] { 1, 5, 4, 2 }, 12,
-    SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> Ingredient.ofItems(Items.IRON_INGOT)),
-    FIGHTER("fighter", 15, new int[] { 1, 4, 3, 2 }, 10,
-    SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0f, 0.0f, () -> Ingredient.ofItems(Items.LEATHER)),
-    MONK("monk", 15, new int[] { 1, 3, 2, 1 }, 15,
-    SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0f, 0.0f, () -> Ingredient.ofItems(Items.WHITE_WOOL));
+    MYRMIDON("myrmidon", 9, new int[] { 1, 4, 3, 2 }, 12,
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0f, 0.0f, () -> Ingredient.ofItems(Items.LEATHER)),
+    SOLDIER("soldier", 13, new int[] { 1, 5, 4, 2 }, 12,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> Ingredient.ofItems(Items.IRON_INGOT)),
+    FIGHTER("fighter", 10, new int[] { 1, 4, 3, 2 }, 10,
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0f, 0.0f, () -> Ingredient.ofItems(Items.LEATHER)),
+    HUNTER("hunter", 8, new int[] { 1, 4, 2, 1 }, 12,
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0f, 0.0f, () -> Ingredient.ofItems(Items.WHITE_WOOL)),
+    MONK("monk", 5, new int[] { 1, 3, 2, 1 }, 15,
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0f, 0.0f, () -> Ingredient.ofItems(Items.WHITE_WOOL));
 
     private final String name;
     private final int durabilityMultiplier;

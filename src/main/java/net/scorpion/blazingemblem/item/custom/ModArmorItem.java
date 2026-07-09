@@ -2,6 +2,9 @@ package net.scorpion.blazingemblem.item.custom;
 
 import com.google.common.collect.ImmutableMap;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.attribute.EntityAttributeInstance;
+import net.minecraft.entity.attribute.EntityAttributeModifier;
+import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
@@ -13,16 +16,22 @@ import net.scorpion.blazingemblem.item.ModArmorMaterial;
 
 import java.util.Map;
 import java.util.Set;
+import java.util.UUID;
 
 public class ModArmorItem extends ArmorItem {
-    private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
-            (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmorMaterial.ACADEMY, new StatusEffectInstance(StatusEffects.HASTE, 400, 1,
-                            false, false, true)).build();
 
     public ModArmorItem(ArmorMaterial material, Type type, Settings settings) {
         super(material, type, settings);
     }
+
+
+    private static final UUID ACADEMY_HEALTH_UUID = UUID.fromString("6e84a3b2-cd49-46d1-a299-9fcfe8af4d71");
+    private static final UUID MYRMIDON_HEALTH_UUID = UUID.fromString("c506e149-fd81-461f-b1b8-d0506a0874fc");
+    private static final UUID SOLDIER_HEALTH_UUID = UUID.fromString("61d1829d-60d2-4b66-9944-0bdbd7ed5764");
+    private static final UUID FIGHTER_HEALTH_UUID = UUID.fromString("6ce235c8-da99-492c-b774-461d960ab096");
+    private static final UUID HUNTER_HEALTH_UUID = UUID.fromString("06ae5893-1d17-4f3e-8ecf-4caaf3fa4b1c");
+    private static final UUID MONK_HEALTH_UUID = UUID.fromString("d6adc26c-98a4-439c-ae97-7dc299fc6c06");
+
 
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
@@ -36,12 +45,33 @@ public class ModArmorItem extends ArmorItem {
     }
 
     private void evaluateArmorEffects(PlayerEntity player) {
-        for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
-            ArmorMaterial mapArmorMaterial = entry.getKey();
-            StatusEffectInstance mapStatusEffect = entry.getValue();
 
-            if(hasCorrectArmorOn(mapArmorMaterial, player)) {
-                addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
+        applyHealthBonus(player, ModArmorMaterial.ACADEMY, ACADEMY_HEALTH_UUID, 2.0);
+        applyHealthBonus(player, ModArmorMaterial.MYRMIDON, MYRMIDON_HEALTH_UUID, 4.0);
+        applyHealthBonus(player, ModArmorMaterial.SOLDIER, SOLDIER_HEALTH_UUID, 4.0);
+        applyHealthBonus(player, ModArmorMaterial.FIGHTER, FIGHTER_HEALTH_UUID, 4.0);
+        applyHealthBonus(player, ModArmorMaterial.HUNTER, HUNTER_HEALTH_UUID, 2.0);
+        applyHealthBonus(player, ModArmorMaterial.MONK, MONK_HEALTH_UUID, 2.0);
+    }
+
+    private void applyHealthBonus(PlayerEntity player, ArmorMaterial material, UUID uuid, double hearts) {
+        EntityAttributeInstance maxHealth =
+                player.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH);
+        if (maxHealth == null) return;
+
+        boolean wearing = hasCorrectArmorOn(material, player);
+
+        if (wearing) {
+            if (maxHealth.getModifier(uuid) == null) {
+                maxHealth.addTemporaryModifier(new EntityAttributeModifier(
+                        uuid, "Set health bonus", hearts, EntityAttributeModifier.Operation.ADDITION));
+            }
+        } else {
+            if (maxHealth.getModifier(uuid) != null) {
+                maxHealth.removeModifier(uuid);
+                if (player.getHealth() > player.getMaxHealth()) {
+                    player.setHealth(player.getMaxHealth());
+                }
             }
         }
     }

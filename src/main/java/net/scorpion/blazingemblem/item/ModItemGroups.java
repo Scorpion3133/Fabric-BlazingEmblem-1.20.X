@@ -111,8 +111,12 @@ public class ModItemGroups {
                         entries.add(ModItems.FIGHTER_CHESTPLATE);
                         entries.add(ModItems.FIGHTER_LEGGINGS);
                         entries.add(ModItems.FIGHTER_BOOTS);
+                        entries.add(ModItems.HUNTER_BANDANA);
+                        entries.add(ModItems.HUNTER_JACKET);
+                        entries.add(ModItems.HUNTER_PANTS);
+                        entries.add(ModItems.HUNTER_BOOTS);
                         entries.add(ModItems.MONK_CAP);
-                        entries.add(ModItems.MONK_DRESS);
+                        entries.add(ModItems.MONK_ROBE);
                         entries.add(ModItems.MONK_PANTS);
                         entries.add(ModItems.MONK_BOOTS);
 
