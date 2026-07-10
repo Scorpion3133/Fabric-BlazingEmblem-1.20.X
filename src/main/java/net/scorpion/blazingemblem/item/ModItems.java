@@ -92,6 +92,8 @@ public class ModItems {
             new AymrItem(ModToolMaterial.UMBRAL_STEEL, 10, -3f, new FabricItemSettings()));
     public static final Item FAILNAUGHT = registerItem("failnaught",
             new FailnaughtItem(new FabricItemSettings().maxDamage(1000)));
+    public static final Item ARMADS = registerItem("armads",
+            new AymrItem(ModToolMaterial.MYTHRIL, 10, -3.1f, new FabricItemSettings()));
 
     // Emblem Rings
     public static final Item RING_HERO_KING = registerItem("ring_hero_king", new Item(new FabricItemSettings().maxCount(16)));
@@ -101,6 +103,7 @@ public class ModItems {
     public static final Item RING_CRUX_FATE = registerItem("ring_crux_fate", new Item(new FabricItemSettings().maxCount(16)));
     public static final Item RING_INSTRUCTOR = registerItem("ring_instructor", new Item(new FabricItemSettings().maxCount(16)));
     public static final Item BRACELET_THREE_HOUSES = registerItem("bracelet_three_houses", new Item(new FabricItemSettings().maxCount(16)));
+    public static final Item BRACELET_BRASH_GENERAL = registerItem("bracelet_brash_general", new Item(new FabricItemSettings().maxCount(16)));
 
     //Armors
     // 3 Houses Academy

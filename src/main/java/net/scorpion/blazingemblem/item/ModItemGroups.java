@@ -51,6 +51,7 @@ public class ModItemGroups {
                         entries.add(ModItems.AREADBHAR);
                         entries.add(ModItems.AYMR);
                         entries.add(ModItems.FAILNAUGHT);
+                        entries.add(ModItems.ARMADS);
 
                     }).build());
 
@@ -65,6 +66,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RING_CRUX_FATE);
                         entries.add(ModItems.RING_INSTRUCTOR);
                         entries.add(ModItems.BRACELET_THREE_HOUSES);
+                        entries.add(ModItems.BRACELET_BRASH_GENERAL);
 
                     }).build());
 

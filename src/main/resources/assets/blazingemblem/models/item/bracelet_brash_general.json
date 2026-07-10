@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "blazingemblem:item/bracelet_brash_general"
+  }
+}

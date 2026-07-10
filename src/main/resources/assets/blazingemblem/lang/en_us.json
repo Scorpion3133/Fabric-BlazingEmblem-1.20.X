@@ -51,6 +51,7 @@
   "item.blazingemblem.areadbhar": "Areadbhar",
   "item.blazingemblem.aymr": "Aymr",
   "item.blazingemblem.failnaught": "Failnaught",
+  "item.blazingemblem.armads": "Armads",
 
   "item.blazingemblem.ring_hero_king": "Ring of the Hero-King",
   "item.blazingemblem.ring_young_lion": "Ring of the Young Lion",
@@ -59,6 +60,7 @@
   "item.blazingemblem.ring_crux_fate": "Ring of the Crux of Fate",
   "item.blazingemblem.ring_instructor": "Ring of the Instructor",
   "item.blazingemblem.bracelet_three_houses": "Bracelet of the Three Houses",
+  "item.blazingemblem.bracelet_brash_general": "Bracelet of the Brash General",
 
   "itemgroup.be_weapons": "Blazing Emblem Weapons",
   "itemgroup.emblem_rings": "Emblem Rings",
@@ -74,6 +76,7 @@
   "tooltip.blazingemblem.areadbhar.title": "Hero's Relic of the Savior King",
   "tooltip.blazingemblem.aymr.title": "Hero's Relic of the Flame Emperor",
   "tooltip.blazingemblem.failnaught.title": "Hero's Relic of the Master Tactician",
+  "tooltip.blazingemblem.armads.title": "Thunder Axe of the Brash General",
 
   "tooltip.blazingemblem.falchion.tooltip": "Does Extra Damage to End Enemies",
   "tooltip.blazingemblem.binding_blade.tooltip": "Sets Fire to Enemies",

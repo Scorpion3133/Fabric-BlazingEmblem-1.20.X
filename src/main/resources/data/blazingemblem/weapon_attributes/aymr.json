@@ -1,5 +1,5 @@
 {
-  "parent": "bettercombat:heavy_axe",
+  "parent": "bettercombat:mace",
   "attributes": {
     "attack_range": 2.5
   }

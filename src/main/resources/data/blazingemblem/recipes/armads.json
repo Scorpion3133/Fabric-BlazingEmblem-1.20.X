@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:gold_block"
+  },
+  "base": {
+    "item": "blazingemblem:mythril_axe"
+  },
+  "result": {
+    "item": "blazingemblem:armads"
+  },
+  "template": {
+    "item": "blazingemblem:bracelet_brash_general"
+  }
+}
