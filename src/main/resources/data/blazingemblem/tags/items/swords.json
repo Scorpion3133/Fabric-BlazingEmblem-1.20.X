@@ -12,12 +12,18 @@
     "blazingemblem:silver_sword",
     "blazingemblem:umbral_steel_sword",
     "blazingemblem:mythril_sword",
+    "blazingemblem:devil_sword",
+    "blazingemblem:blessed_sword",
+    "blazingemblem:brave_sword",
 
     "blazingemblem:falchion",
     "blazingemblem:binding_blade",
     "blazingemblem:ragnell",
     "blazingemblem:parallel_falchion",
     "blazingemblem:yato",
-    "blazingemblem:sword_creator"
+    "blazingemblem:sword_creator",
+    "blazingemblem:liberation",
+    "blazingemblem:light_brand",
+    "blazingemblem:mani_katti"
   ]
 }

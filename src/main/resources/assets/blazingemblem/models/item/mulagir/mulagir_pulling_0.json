@@ -1,0 +1,6 @@
+{
+  "parent": "blazingemblem:item/mulagir",
+  "textures": {
+    "layer0": "blazingemblem:item/mulagir/mulagir_pulling_0"
+  }
+}

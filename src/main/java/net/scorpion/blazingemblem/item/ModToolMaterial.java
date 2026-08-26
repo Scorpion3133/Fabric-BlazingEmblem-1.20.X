@@ -9,7 +9,7 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    STEEL(2, 750, 6.5f, 2.0f, 14,
+    STEEL(2, 750, 6.5f, 3f, 14,
             () -> Ingredient.ofItems(ModItems.STEEL_INGOT)),
     SILVER(2, 550, 7.0f, 3.0f, 22,
             () -> Ingredient.ofItems(ModItems.SILVER_INGOT)),

@@ -36,6 +36,7 @@ public class BlazingEmblemClient implements ClientModInitializer {
         registerModelPredicateProviders(ModItems.UMBRAL_STEEL_BOW);
         registerModelPredicateProviders(ModItems.MYTHRIL_BOW);
         registerModelPredicateProviders(ModItems.FAILNAUGHT);
+        registerModelPredicateProviders(ModItems.MULAGIR);
 
     }
 }

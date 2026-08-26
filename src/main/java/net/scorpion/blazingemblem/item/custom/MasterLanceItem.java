@@ -10,15 +10,15 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class ArmadsItem extends AxeWeaponItem {
-    public ArmadsItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
+public class MasterLanceItem extends LanceItem {
+    public MasterLanceItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
         super(toolMaterial, attackDamage, attackSpeed, settings);
     }
 
+
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("tooltip.blazingemblem.armads.title").formatted(Formatting.GOLD, Formatting.ITALIC));
-        tooltip.add(Text.translatable("tooltip.blazingemblem.armads.tooltip").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("tooltip.blazingemblem.master_lance.title").formatted(Formatting.GOLD, Formatting.ITALIC));
         super.appendTooltip(stack, world, tooltip, context);
     }
 }

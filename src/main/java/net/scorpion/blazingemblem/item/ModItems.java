@@ -22,55 +22,76 @@ public class ModItems {
     // Regular Weapons
     //  Old Metal's Spears/Bow
     public static final Item WOODEN_SPEAR = registerItem("wooden_spear",
-            new SpearItem(ToolMaterials.WOOD, 2, -2.4f, new FabricItemSettings()));
+            new LanceItem(ToolMaterials.WOOD, 2, -2.4f, new FabricItemSettings()));
     public static final Item STONE_SPEAR = registerItem("stone_spear",
-            new SpearItem(ToolMaterials.STONE, 2, -2.4f, new FabricItemSettings()));
+            new LanceItem(ToolMaterials.STONE, 2, -2.4f, new FabricItemSettings()));
     public static final Item IRON_SPEAR = registerItem("iron_spear",
-            new SpearItem(ToolMaterials.IRON, 2, -2.4f, new FabricItemSettings()));
+            new LanceItem(ToolMaterials.IRON, 2, -2.4f, new FabricItemSettings()));
     public static final Item GOLDEN_SPEAR = registerItem("golden_spear",
-            new SpearItem(ToolMaterials.GOLD, 2, -2.4f, new FabricItemSettings()));
+            new LanceItem(ToolMaterials.GOLD, 2, -2.4f, new FabricItemSettings()));
     public static final Item DIAMOND_SPEAR = registerItem("diamond_spear",
-            new SpearItem(ToolMaterials.DIAMOND, 2, -2.4f, new FabricItemSettings()));
+            new LanceItem(ToolMaterials.DIAMOND, 2, -2.4f, new FabricItemSettings()));
     public static final Item NETHERITE_SPEAR = registerItem("netherite_spear",
-            new SpearItem(ToolMaterials.NETHERITE, 2, -2.4f, new FabricItemSettings()));
+            new LanceItem(ToolMaterials.NETHERITE, 2, -2.4f, new FabricItemSettings()));
     public static final Item IRON_BOW = registerItem("iron_bow",
             new BowWeaponItem(new FabricItemSettings().maxDamage(400), 1.0, 1.0f));
     //  Steel
     public static final Item STEEL_SWORD = registerItem("steel_sword",
-            new SwordItem(ModToolMaterial.STEEL, 3, -2.2f, new FabricItemSettings()));
+            new SwordItem(ModToolMaterial.STEEL, 3, -2.6f, new FabricItemSettings()));
     public static final Item STEEL_AXE = registerItem("steel_axe",
-            new AxeItem(ModToolMaterial.STEEL, 5, -2.9f, new FabricItemSettings()));
+            new AxeItem(ModToolMaterial.STEEL, 6, -3.15f, new FabricItemSettings()));
     public static final Item STEEL_SPEAR = registerItem("steel_spear",
-            new SpearItem(ModToolMaterial.STEEL, 2, -2.2f, new FabricItemSettings()));
+            new LanceItem(ModToolMaterial.STEEL, 2, -2.6f, new FabricItemSettings()));
     public static final Item STEEL_BOW = registerItem("steel_bow",
-            new BowWeaponItem(new FabricItemSettings().maxDamage(550), 0.5, 1.3f));
+            new BowWeaponItem(new FabricItemSettings().maxDamage(550), 2, 0.85f));
     // Silver
     public static final Item SILVER_SWORD = registerItem("silver_sword",
-            new SwordItem(ModToolMaterial.SILVER, 3, -2.7f, new FabricItemSettings()));
+            new SwordItem(ModToolMaterial.SILVER, 3, -2.2f, new FabricItemSettings()));
     public static final Item SILVER_AXE = registerItem("silver_axe",
-            new AxeItem(ModToolMaterial.SILVER, 6, -3.1f, new FabricItemSettings()));
+            new AxeItem(ModToolMaterial.SILVER, 6, -2.9f, new FabricItemSettings()));
     public static final Item SILVER_SPEAR = registerItem("silver_spear",
-            new SpearItem(ModToolMaterial.SILVER, 2, -2.7f, new FabricItemSettings()));
+            new LanceItem(ModToolMaterial.SILVER, 2, -2.2f, new FabricItemSettings()));
     public static final Item SILVER_BOW = registerItem("silver_bow",
-            new BowWeaponItem(new FabricItemSettings().maxDamage(450), 2, 0.85f));
+            new BowWeaponItem(new FabricItemSettings().maxDamage(450), 1.5, 1.3f));
     // Umbral Steel
     public static final Item UMBRAL_STEEL_SWORD = registerItem("umbral_steel_sword",
             new SwordItem(ModToolMaterial.UMBRAL_STEEL, 3, -2.6f, new FabricItemSettings()));
     public static final Item UMBRAL_STEEL_AXE = registerItem("umbral_steel_axe",
-            new AxeItem(ModToolMaterial.UMBRAL_STEEL, 6f, -3.2f, new FabricItemSettings()));
+            new AxeItem(ModToolMaterial.UMBRAL_STEEL, 6f, -3.0f, new FabricItemSettings()));
     public static final Item UMBRAL_STEEL_SPEAR = registerItem("umbral_steel_spear",
-            new SpearItem(ModToolMaterial.UMBRAL_STEEL, 2, -2.6f, new FabricItemSettings()));
+            new LanceItem(ModToolMaterial.UMBRAL_STEEL, 3, -2.6f, new FabricItemSettings()));
     public static final Item UMBRAL_STEEL_BOW = registerItem("umbral_steel_bow",
             new BowWeaponItem(new FabricItemSettings().maxDamage(1200), 3, 0.85f));
     // Mithril
     public static final Item MYTHRIL_SWORD = registerItem("mythril_sword",
             new SwordItem(ModToolMaterial.MYTHRIL, 3, -2.2f, new FabricItemSettings()));
     public static final Item MYTHRIL_AXE = registerItem("mythril_axe",
-            new AxeItem(ModToolMaterial.MYTHRIL, 5, -2.9f, new FabricItemSettings()));
+            new AxeItem(ModToolMaterial.MYTHRIL, 7, -2.9f, new FabricItemSettings()));
     public static final Item MYTHRIL_SPEAR = registerItem("mythril_spear",
-            new SpearItem(ModToolMaterial.MYTHRIL, 2, -2.2f, new FabricItemSettings()));
+            new LanceItem(ModToolMaterial.MYTHRIL, 3, -2.2f, new FabricItemSettings()));
     public static final Item MYTHRIL_BOW = registerItem("mythril_bow",
-            new BowWeaponItem(new FabricItemSettings().maxDamage(1400), 1.5, 1.3f));
+            new BowWeaponItem(new FabricItemSettings().maxDamage(1400), 2, 1.3f));
+    // Devil
+    public static final Item DEVIL_SWORD = registerItem("devil_sword",
+            new DevilSwordItem(ToolMaterials.IRON, 4, -2.2f, new FabricItemSettings()));
+    public static final Item DEVIL_AXE = registerItem("devil_axe",
+            new DevilAxeItem(ToolMaterials.IRON, 7, -2.9f, new FabricItemSettings()));
+    public static final Item DEVIL_LANCE = registerItem("devil_lance",
+            new DevilSpearItem(ToolMaterials.IRON, 3, -2.2f, new FabricItemSettings()));
+    // Blessed
+    public static final Item BLESSED_SWORD = registerItem("blessed_sword",
+            new BlessedSwordItem(ModToolMaterial.STEEL, 2, -2.6f, new FabricItemSettings()));
+    public static final Item BLESSED_AXE = registerItem("blessed_axe",
+            new BlessedAxeItem(ModToolMaterial.STEEL, 5, -3.1f, new FabricItemSettings()));
+    public static final Item BLESSED_LANCE = registerItem("blessed_lance",
+            new BlessedLanceItem(ModToolMaterial.STEEL, 1, -2.6f, new FabricItemSettings()));
+    // Brave
+    public static final Item BRAVE_SWORD = registerItem("brave_sword",
+            new SwordItem(ModToolMaterial.SILVER, 0, -0.8f, new FabricItemSettings()));
+    public static final Item BRAVE_AXE = registerItem("brave_axe",
+            new AxeItem(ModToolMaterial.SILVER, 1, -1.8f, new FabricItemSettings()));
+    public static final Item BRAVE_LANCE = registerItem("brave_lance",
+            new LanceItem(ModToolMaterial.SILVER, -1, -0.6f, new FabricItemSettings()));
 
 
     // Unique Weapons
@@ -93,7 +114,17 @@ public class ModItems {
     public static final Item FAILNAUGHT = registerItem("failnaught",
             new FailnaughtItem(new FabricItemSettings().maxDamage(1000)));
     public static final Item ARMADS = registerItem("armads",
-            new AymrItem(ModToolMaterial.MYTHRIL, 10, -3.1f, new FabricItemSettings()));
+            new ArmadsItem(ModToolMaterial.MYTHRIL, 10, -3.1f, new FabricItemSettings()));
+    public static final Item LIBERATION = registerItem("liberation",
+            new LiberationItem(ModToolMaterial.MYTHRIL, 4, -2f, new FabricItemSettings()));
+    public static final Item LIGHT_BRAND = registerItem("light_brand",
+            new LightBrandItem(ModToolMaterial.MYTHRIL, 4, -2f, new FabricItemSettings()));
+    public static final Item MASTER_LANCE = registerItem("master_lance",
+            new MasterLanceItem(ModToolMaterial.MYTHRIL, 0, -0.6f, new FabricItemSettings()));
+    public static final Item MANI_KATTI = registerItem("mani_katti",
+            new ManiKattiItem(ModToolMaterial.MYTHRIL, 3, -2.2f, new FabricItemSettings()));
+    public static final Item MULAGIR = registerItem("mulagir",
+            new MulagirItem(new FabricItemSettings().maxDamage(1000)));
 
     // Emblem Rings
     public static final Item RING_HERO_KING = registerItem("ring_hero_king", new Item(new FabricItemSettings().maxCount(16)));

@@ -19,11 +19,17 @@ public class ModItemGroups {
                         entries.add(ModItems.SILVER_SWORD);
                         entries.add(ModItems.UMBRAL_STEEL_SWORD);
                         entries.add(ModItems.MYTHRIL_SWORD);
+                        entries.add(ModItems.DEVIL_SWORD);
+                        entries.add(ModItems.BLESSED_SWORD);
+                        entries.add(ModItems.BRAVE_SWORD);
 
                         entries.add(ModItems.STEEL_AXE);
                         entries.add(ModItems.SILVER_AXE);
                         entries.add(ModItems.UMBRAL_STEEL_AXE);
                         entries.add(ModItems.MYTHRIL_AXE);
+                        entries.add(ModItems.DEVIL_AXE);
+                        entries.add(ModItems.BLESSED_AXE);
+                        entries.add(ModItems.BRAVE_AXE);
 
                         entries.add(ModItems.WOODEN_SPEAR);
                         entries.add(ModItems.STONE_SPEAR);
@@ -35,6 +41,9 @@ public class ModItemGroups {
                         entries.add(ModItems.NETHERITE_SPEAR);
                         entries.add(ModItems.UMBRAL_STEEL_SPEAR);
                         entries.add(ModItems.MYTHRIL_SPEAR);
+                        entries.add(ModItems.DEVIL_LANCE);
+                        entries.add(ModItems.BLESSED_LANCE);
+                        entries.add(ModItems.BRAVE_LANCE);
 
                         entries.add(ModItems.IRON_BOW);
                         entries.add(ModItems.STEEL_BOW);
@@ -43,15 +52,24 @@ public class ModItemGroups {
                         entries.add(ModItems.MYTHRIL_BOW);
 
                         entries.add(ModItems.FALCHION);
+                        // Celica
+                        // Sigurd
+                        entries.add(ModItems.LIGHT_BRAND);
+                        entries.add(ModItems.MASTER_LANCE);
                         entries.add(ModItems.BINDING_BLADE);
+                        entries.add(ModItems.MANI_KATTI);
+                        entries.add(ModItems.MULAGIR);
+                        entries.add(ModItems.ARMADS);
+                        // Eirika
                         entries.add(ModItems.RAGNELL);
+                        // Micaiah
                         entries.add(ModItems.PARALLEL_FALCHION);
                         entries.add(ModItems.YATO);
                         entries.add(ModItems.SWORD_CREATOR);
                         entries.add(ModItems.AREADBHAR);
                         entries.add(ModItems.AYMR);
                         entries.add(ModItems.FAILNAUGHT);
-                        entries.add(ModItems.ARMADS);
+                        entries.add(ModItems.LIBERATION);
 
                     }).build());
 
