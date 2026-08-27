@@ -128,11 +128,14 @@ public class ModItems {
 
     // Emblem Rings
     public static final Item RING_HERO_KING = registerItem("ring_hero_king", new Item(new FabricItemSettings().maxCount(16)));
+    public static final Item RING_SAGE_LORD = registerItem("ring_sage_lord", new Item(new FabricItemSettings().maxCount(16)));
     public static final Item RING_YOUNG_LION = registerItem("ring_young_lion", new Item(new FabricItemSettings().maxCount(16)));
+    public static final Item RING_LADY_PLAINS = registerItem("ring_lady_plains", new Item(new FabricItemSettings().maxCount(16)));
     public static final Item RING_RADIANT_HERO = registerItem("ring_radiant_hero", new Item(new FabricItemSettings().maxCount(16)));
     public static final Item RING_PRINCESS_EXALT = registerItem("ring_princess_exalt", new Item(new FabricItemSettings().maxCount(16)));
     public static final Item RING_CRUX_FATE = registerItem("ring_crux_fate", new Item(new FabricItemSettings().maxCount(16)));
     public static final Item RING_INSTRUCTOR = registerItem("ring_instructor", new Item(new FabricItemSettings().maxCount(16)));
+    public static final Item RING_CONNECTOR = registerItem("ring_connector", new Item(new FabricItemSettings().maxCount(16)));
     public static final Item BRACELET_THREE_HOUSES = registerItem("bracelet_three_houses", new Item(new FabricItemSettings().maxCount(16)));
     public static final Item BRACELET_BRASH_GENERAL = registerItem("bracelet_brash_general", new Item(new FabricItemSettings().maxCount(16)));
 

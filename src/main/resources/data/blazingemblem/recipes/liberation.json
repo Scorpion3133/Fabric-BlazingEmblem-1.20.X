@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:echo_shard"
+  },
+  "base": {
+    "item": "blazingemblem:mythril_sword"
+  },
+  "result": {
+    "item": "blazingemblem:liberation"
+  },
+  "template": {
+    "item": "blazingemblem:ring_connector"
+  }
+}

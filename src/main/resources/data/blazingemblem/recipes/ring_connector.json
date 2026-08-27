@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": {
+      "item": "minecraft:iron_nugget"
+    },
+    "r": {
+      "item": "blazingemblem:ring_connector"
+    },
+    "#": {
+      "item": "minecraft:echo_shard"
+    }
+  },
+  "pattern": [
+    "grg",
+    "g#g",
+    "ggg"
+  ],
+  "result": {
+    "count": 2,
+    "item": "blazingemblem:ring_connector"
+  },
+  "show_notification": true
+}

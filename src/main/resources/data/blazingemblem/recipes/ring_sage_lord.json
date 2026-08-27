@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": {
+      "item": "minecraft:gold_nugget"
+    },
+    "r": {
+      "item": "blazingemblem:ring_sage_lord"
+    },
+    "#": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+  "pattern": [
+    "grg",
+    "g#g",
+    "ggg"
+  ],
+  "result": {
+    "count": 2,
+    "item": "blazingemblem:ring_sage_lord"
+  },
+  "show_notification": true
+}

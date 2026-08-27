@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "blazingemblem:mythril_ingot"
+  },
+  "base": {
+    "item": "blazingemblem:brave_lance"
+  },
+  "result": {
+    "item": "blazingemblem:master_lance"
+  },
+  "template": {
+    "item": "blazingemblem:ring_sage_lord"
+  }
+}

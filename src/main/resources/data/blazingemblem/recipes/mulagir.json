@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:phantom_membrane"
+  },
+  "base": {
+    "item": "blazingemblem:mythril_sword"
+  },
+  "result": {
+    "item": "blazingemblem:mulagir"
+  },
+  "template": {
+    "item": "blazingemblem:ring_lady_plains"
+  }
+}

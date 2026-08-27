@@ -78,11 +78,14 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.emblem_rings"))
                     .icon(() -> new ItemStack(ModItems.RING_HERO_KING)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RING_HERO_KING);
+                        entries.add(ModItems.RING_SAGE_LORD);
                         entries.add(ModItems.RING_YOUNG_LION);
+                        entries.add(ModItems.RING_LADY_PLAINS);
                         entries.add(ModItems.RING_RADIANT_HERO);
                         entries.add(ModItems.RING_PRINCESS_EXALT);
                         entries.add(ModItems.RING_CRUX_FATE);
                         entries.add(ModItems.RING_INSTRUCTOR);
+                        entries.add(ModItems.RING_CONNECTOR);
                         entries.add(ModItems.BRACELET_THREE_HOUSES);
                         entries.add(ModItems.BRACELET_BRASH_GENERAL);
 

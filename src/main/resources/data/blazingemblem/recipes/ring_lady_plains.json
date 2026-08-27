@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": {
+      "item": "minecraft:gold_nugget"
+    },
+    "r": {
+      "item": "blazingemblem:ring_lady_plains"
+    },
+    "#": {
+      "item": "minecraft:phantom_membrane"
+    }
+  },
+  "pattern": [
+    "grg",
+    "g#g",
+    "ggg"
+  ],
+  "result": {
+    "count": 2,
+    "item": "blazingemblem:ring_lady_plains"
+  },
+  "show_notification": true
+}
