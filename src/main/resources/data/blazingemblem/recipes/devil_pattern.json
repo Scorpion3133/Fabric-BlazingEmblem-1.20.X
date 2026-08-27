@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "blazingemblem:steel_ingot"
+    },
+    "X": {
+      "item": "minecraft:iron_ingot"
+    },
+    "B": {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    "#": {
+      "item": "minecraft:paper"
+    }
+  },
+  "pattern": [
+    "#M#",
+    "XBX",
+    "#X#"
+  ],
+  "result": {
+    "count": 1,
+    "item": "blazingemblem:devil_pattern"
+  }
+}

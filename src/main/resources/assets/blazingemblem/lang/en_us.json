@@ -77,10 +77,15 @@
   "item.blazingemblem.bracelet_three_houses": "Bracelet of the Three Houses",
   "item.blazingemblem.bracelet_brash_general": "Bracelet of the Brash General",
 
+  "item.blazingemblem.devil_pattern": "Devil Pattern",
+  "item.blazingemblem.blessed_pattern": "Blessed Pattern",
+  "item.blazingemblem.brave_pattern": "Brave Pattern",
+
   "itemgroup.be_weapons": "Blazing Emblem Weapons",
   "itemgroup.emblem_rings": "Emblem Rings",
   "itemgroup.be_metals": "Blazing Emblem Metals",
   "itemgroup.be_armors": "Blazing Emblem Armors",
+  "itemgroup.blacksmithing_items": "Blacksmithing Items",
 
   "tooltip.blazingemblem.falchion.title": "Divine Blade of the Hero-King",
   "tooltip.blazingemblem.binding_blade.title": "Sealing Flame of the Young Lion",

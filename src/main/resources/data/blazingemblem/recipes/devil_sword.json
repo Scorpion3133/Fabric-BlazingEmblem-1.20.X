@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:fermented_spider_eye"
+  },
+  "base": {
+    "item": "minecraft:iron_sword"
+  },
+  "result": {
+    "item": "blazingemblem:devil_sword"
+  },
+  "template": {
+    "item": "blazingemblem:devil_pattern"
+  }
+}

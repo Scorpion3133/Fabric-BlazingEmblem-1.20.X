@@ -1,6 +1,6 @@
 {
-  "parent": "bettercombat:axe",
+  "parent": "bettercombat:glaive",
   "attributes": {
-    "attack_range": 2.5
+    "attack_range": 3
   }
 }

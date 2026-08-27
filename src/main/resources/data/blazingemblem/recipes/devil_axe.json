@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:fermented_spider_eye"
+  },
+  "base": {
+    "item": "minecraft:iron_axe"
+  },
+  "result": {
+    "item": "blazingemblem:devil_axe"
+  },
+  "template": {
+    "item": "blazingemblem:devil_pattern"
+  }
+}

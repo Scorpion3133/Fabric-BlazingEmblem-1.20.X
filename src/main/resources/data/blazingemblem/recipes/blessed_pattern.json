@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "blazingemblem:silver_ingot"
+    },
+    "X": {
+      "item": "blazingemblem:steel_ingot"
+    },
+    "B": {
+      "item": "minecraft:ghast_tear"
+    },
+    "#": {
+      "item": "minecraft:paper"
+    }
+  },
+  "pattern": [
+    "#M#",
+    "XBX",
+    "#X#"
+  ],
+  "result": {
+    "count": 1,
+    "item": "blazingemblem:blessed_pattern"
+  }
+}

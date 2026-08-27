@@ -136,6 +136,12 @@ public class ModItems {
     public static final Item BRACELET_THREE_HOUSES = registerItem("bracelet_three_houses", new Item(new FabricItemSettings().maxCount(16)));
     public static final Item BRACELET_BRASH_GENERAL = registerItem("bracelet_brash_general", new Item(new FabricItemSettings().maxCount(16)));
 
+    // Blacksmith Patterns
+    public static final Item DEVIL_PATTERN = registerItem("devil_pattern", new Item(new FabricItemSettings()));
+    public static final Item BLESSED_PATTERN = registerItem("blessed_pattern", new Item(new FabricItemSettings()));
+    public static final Item BRAVE_PATTERN = registerItem("brave_pattern", new Item(new FabricItemSettings()));
+
+
     //Armors
     // 3 Houses Academy
     public static final Item ACADEMY_CHESTPLATE = registerItem("academy_chestplate",

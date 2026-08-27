@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:sugar"
+  },
+  "base": {
+    "item": "blazingemblem:silver_sword"
+  },
+  "result": {
+    "item": "blazingemblem:brave_sword"
+  },
+  "template": {
+    "item": "blazingemblem:brave_pattern"
+  }
+}

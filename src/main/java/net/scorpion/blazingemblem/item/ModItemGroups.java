@@ -88,6 +88,16 @@ public class ModItemGroups {
 
                     }).build());
 
+    public static final ItemGroup BLACKSMITHING_ITEMS = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(BlazingEmblem.MOD_ID, "blacksmithing_items"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.blacksmithing_items"))
+                    .icon(() -> new ItemStack(ModItems.DEVIL_PATTERN)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.DEVIL_PATTERN);
+                        entries.add(ModItems.BLESSED_PATTERN);
+                        entries.add(ModItems.BRAVE_PATTERN);
+
+                    }).build());
+
     public static final ItemGroup BE_METALS = Registry.register(Registries.ITEM_GROUP,
             new Identifier(BlazingEmblem.MOD_ID, "be_metals"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.be_metals"))
@@ -105,7 +115,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MYTHRIL_BLOCK);
                     }).build());
 
-    public static final ItemGroup BE_ARMORs = Registry.register(Registries.ITEM_GROUP,
+    public static final ItemGroup BE_ARMORS = Registry.register(Registries.ITEM_GROUP,
             new Identifier(BlazingEmblem.MOD_ID, "be_armors"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.be_armors"))
                     .icon(() -> new ItemStack(ModItems.ACADEMY_CHESTPLATE)).entries((displayContext, entries) -> {
