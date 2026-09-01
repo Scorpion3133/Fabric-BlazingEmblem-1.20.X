@@ -1,8 +1,13 @@
 package net.scorpion.blazingemblem.item;
 
+import dev.emi.trinkets.api.TrinketsApi;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.entity.attribute.EntityAttributeModifier;
+import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -10,6 +15,7 @@ import net.minecraft.util.Identifier;
 import net.scorpion.blazingemblem.BlazingEmblem;
 import net.scorpion.blazingemblem.item.client.ModGeoArmorRenderer;
 import net.scorpion.blazingemblem.item.custom.*;
+import net.scorpion.blazingemblem.util.ModTags;
 
 public class ModItems {
     // Metals
@@ -127,17 +133,39 @@ public class ModItems {
             new MulagirItem(new FabricItemSettings().maxDamage(1000)));
 
     // Emblem Rings
-    public static final Item RING_HERO_KING = registerItem("ring_hero_king", new Item(new FabricItemSettings().maxCount(16)));
-    public static final Item RING_SAGE_LORD = registerItem("ring_sage_lord", new Item(new FabricItemSettings().maxCount(16)));
-    public static final Item RING_YOUNG_LION = registerItem("ring_young_lion", new Item(new FabricItemSettings().maxCount(16)));
-    public static final Item RING_LADY_PLAINS = registerItem("ring_lady_plains", new Item(new FabricItemSettings().maxCount(16)));
-    public static final Item RING_RADIANT_HERO = registerItem("ring_radiant_hero", new Item(new FabricItemSettings().maxCount(16)));
-    public static final Item RING_PRINCESS_EXALT = registerItem("ring_princess_exalt", new Item(new FabricItemSettings().maxCount(16)));
-    public static final Item RING_CRUX_FATE = registerItem("ring_crux_fate", new Item(new FabricItemSettings().maxCount(16)));
-    public static final Item RING_INSTRUCTOR = registerItem("ring_instructor", new Item(new FabricItemSettings().maxCount(16)));
-    public static final Item RING_CONNECTOR = registerItem("ring_connector", new Item(new FabricItemSettings().maxCount(16)));
-    public static final Item BRACELET_THREE_HOUSES = registerItem("bracelet_three_houses", new Item(new FabricItemSettings().maxCount(16)));
-    public static final Item BRACELET_BRASH_GENERAL = registerItem("bracelet_brash_general", new Item(new FabricItemSettings().maxCount(16)));
+    public static final Item RING_HERO_KING = registerItem("ring_hero_king",
+            new EmblemRingItem(new FabricItemSettings(),
+            StatusEffects.HASTE, 0));
+    public static final Item RING_SAGE_LORD = registerItem("ring_sage_lord",
+            new EmblemRingItem(new FabricItemSettings(),
+            EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, 0.3, EntityAttributeModifier.Operation.ADDITION, "sages_defence"));
+    public static final Item RING_YOUNG_LION = registerItem("ring_young_lion",
+            new EmblemRingItem(new FabricItemSettings(),
+            EntityAttributes.GENERIC_ATTACK_DAMAGE, 2.0, EntityAttributeModifier.Operation.ADDITION, "lions_attack"));
+    public static final Item RING_LADY_PLAINS = registerItem("ring_lady_plains",
+            new EmblemRingItem(new FabricItemSettings(),
+            EntityAttributes.GENERIC_ATTACK_SPEED, 0.2, EntityAttributeModifier.Operation.MULTIPLY_TOTAL, "winds_speed"));
+    public static final Item RING_RADIANT_HERO = registerItem("ring_radiant_hero",
+            new EmblemRingItem(new FabricItemSettings(),
+            StatusEffects.RESISTANCE, 0));
+    public static final Item RING_PRINCESS_EXALT = registerItem("ring_princess_exalt",
+            new EmblemRingItem(new FabricItemSettings(),
+            EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.20, EntityAttributeModifier.Operation.MULTIPLY_TOTAL, "exalts_speed"));
+    public static final Item RING_CRUX_FATE = registerItem("ring_crux_fate",
+            new EmblemRingItem(new FabricItemSettings(),
+            EntityAttributes.GENERIC_MAX_HEALTH, 6.0, EntityAttributeModifier.Operation.ADDITION, "fates_hp"));
+    public static final Item RING_INSTRUCTOR = registerItem("ring_instructor",
+            new EmblemRingItem(new FabricItemSettings(),
+            EntityAttributes.GENERIC_LUCK, 5.0, EntityAttributeModifier.Operation.ADDITION, "divine_luck"));
+    public static final Item RING_CONNECTOR = registerItem("ring_connector",
+            new EmblemRingItem(new FabricItemSettings(),
+            EntityAttributes.GENERIC_MAX_HEALTH, 2.0, EntityAttributeModifier.Operation.ADDITION, "connections_hp"));
+    public static final Item BRACELET_THREE_HOUSES = registerItem("bracelet_three_houses",
+            new EmblemRingItem(new FabricItemSettings(),
+            null, 0)); //RELIC POWER BOOST
+    public static final Item BRACELET_BRASH_GENERAL = registerItem("bracelet_brash_general",
+            new EmblemRingItem(new FabricItemSettings(),
+            EntityAttributes.GENERIC_ARMOR_TOUGHNESS, 4.0, EntityAttributeModifier.Operation.ADDITION, "brash_toughness"));
 
     // Blacksmith Patterns
     public static final Item DEVIL_PATTERN = registerItem("devil_pattern", new Item(new FabricItemSettings()));
@@ -254,5 +282,17 @@ public class ModItems {
         BlazingEmblem.LOGGER.info("Registering Mod Items for " + BlazingEmblem.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemsToCombatItemGroup);
+    }
+
+    public static boolean isWearingTrinket(PlayerEntity player, Item trinketItem) {
+        return TrinketsApi.getTrinketComponent(player)
+                .map(comp -> comp.isEquipped(trinketItem))
+                .orElse(false);
+    }
+
+    public static boolean isWearingAnyEmblemRing(PlayerEntity player) {
+        return TrinketsApi.getTrinketComponent(player)
+                .map(comp -> comp.isEquipped(stack -> stack.isIn(ModTags.Items.RINGS)))
+                .orElse(false);
     }
 }

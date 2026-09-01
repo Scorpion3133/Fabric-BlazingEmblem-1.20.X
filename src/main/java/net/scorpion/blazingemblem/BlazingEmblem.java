@@ -12,6 +12,7 @@ import net.scorpion.blazingemblem.item.ModArmorMaterial;
 import net.scorpion.blazingemblem.item.ModItemGroups;
 import net.scorpion.blazingemblem.item.ModItems;
 import net.scorpion.blazingemblem.item.custom.FalchionItem;
+import net.scorpion.blazingemblem.item.custom.LiberationItem;
 import net.scorpion.blazingemblem.item.custom.ModArmorItem;
 import net.scorpion.blazingemblem.item.custom.ParallelFalchionItem;
 import net.scorpion.blazingemblem.util.ModTags;
@@ -19,6 +20,8 @@ import net.scorpion.blazingemblem.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.bernie.geckolib.GeckoLib;
+
+import static net.scorpion.blazingemblem.item.ModItems.*;
 
 public class BlazingEmblem implements ModInitializer {
 	public static final String MOD_ID = "blazingemblem";
@@ -68,6 +71,25 @@ public class BlazingEmblem implements ModInitializer {
 					target.timeUntilRegen = oldRegen;
 				}
 				// Add Monk when magic is in
+
+
+				if (isWearingTrinket(player, ModItems.BRACELET_THREE_HOUSES)
+						&& weapon.isIn(ModTags.Items.RELICS)) {
+					int oldRegen = target.timeUntilRegen;
+					target.timeUntilRegen = 0;
+					target.damage(world.getDamageSources().mobAttack(player), 3.0f);
+					target.timeUntilRegen = oldRegen;
+				}
+
+				boolean libWithRing = weapon.getItem() instanceof LiberationItem && isWearingAnyEmblemRing(player);
+				boolean connectorWithLegendary = isWearingTrinket(player, ModItems.RING_CONNECTOR) && weapon.isIn(ModTags.Items.LEGENDARIES);
+
+				if (libWithRing || connectorWithLegendary) {
+					int oldRegen = target.timeUntilRegen;
+					target.timeUntilRegen = 0;
+					target.damage(world.getDamageSources().mobAttack(player), 3.0f);
+					target.timeUntilRegen = oldRegen;
+				}
 
 			}
 

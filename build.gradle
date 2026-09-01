@@ -21,6 +21,10 @@ repositories {
 			includeGroup("com.eliotlash.mclib")
 		}
 	}
+	maven {
+		name = "Ladysnake Mods"
+		url = "https://maven.ladysnake.org/releases"
+	}
 }
 
 fabricApi {
@@ -46,6 +50,8 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
 
+	modImplementation "maven.modrinth:mOgUt4GM:zv46i3PW"
+
 	modImplementation "maven.modrinth:better-combat:1.9.0+1.20.1-fabric"
 	modImplementation "maven.modrinth:playeranimator:1.0.2-rc1+1.20-fabric"
 	modImplementation "maven.modrinth:cloth-config:11.1.136+fabric"
@@ -54,6 +60,10 @@ dependencies {
 
 	modLocalRuntime "maven.modrinth:moonlight:1.20-2.16.34-fabric"
 	modLocalRuntime "maven.modrinth:mmmmmmmmmmmm:1.20-2.0.12-fabric"
+
+	modImplementation "dev.onyxstudios.cardinal-components-api:cardinal-components-base:5.2.3"
+	modImplementation "dev.onyxstudios.cardinal-components-api:cardinal-components-entity:5.2.3"
+	modImplementation "maven.modrinth:trinkets:3.7.2"
 }
 
 processResources {

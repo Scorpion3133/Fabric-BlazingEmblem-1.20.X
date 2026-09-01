@@ -21,6 +21,9 @@ public class ModTags {
         public static final TagKey<Item> SWORDS = createTag("swords");
         public static final TagKey<Item> AXES = createTag("axes");
         public static final TagKey<Item> BOWS = createTag("bows");
+        public static final TagKey<Item> RELICS = createTag("relics");
+        public static final TagKey<Item> LEGENDARIES = createTag("legendaries");
+        public static final TagKey<Item> RINGS = createTag("rings");
 
         private static TagKey<Item> createTag(String name){
             return TagKey.of(RegistryKeys.ITEM, new Identifier(BlazingEmblem.MOD_ID, name));
